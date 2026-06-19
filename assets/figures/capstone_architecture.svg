@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 620" role="img" font-family="sans-serif">
+<title>Smart Agricultural Workcell — capstone architecture</title>
+<desc>Six subsystems of the Intelligent Fluid-Powered Agricultural Manipulation Cell arranged in a clean grid: Hydraulic power, Fluid transport, Motion control, Actuation, Sensing and intelligence, and Digital twin.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .t  { font-size: 14px; fill: #2C2C2A; }
+    .ts { font-size: 12px; fill: #5F5E5A; }
+    .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+    .arr { stroke: #73726c; stroke-width: 1.5px; fill: none; }
+    .leader { stroke: #B4B2A9; stroke-width: 0.5px; stroke-dasharray: 4 3; fill: none; }
+    rect { stroke-width: 0.5px; }
+    .c-amber  rect { fill: #FAEEDA; stroke: #BA7517; } .c-amber  .th,.c-amber  .t { fill: #633806; } .c-amber  .ts { fill: #854F0B; }
+    .c-coral  rect { fill: #FAECE7; stroke: #993C1D; } .c-coral  .th,.c-coral  .t { fill: #712B13; } .c-coral  .ts { fill: #993C1D; }
+    .c-teal   rect { fill: #E1F5EE; stroke: #0F6E56; } .c-teal   .th,.c-teal   .t { fill: #085041; } .c-teal   .ts { fill: #0F6E56; }
+    .c-blue   rect { fill: #E6F1FB; stroke: #185FA5; } .c-blue   .th,.c-blue   .t { fill: #0C447C; } .c-blue   .ts { fill: #185FA5; }
+    .c-purple rect { fill: #EEEDFE; stroke: #534AB7; } .c-purple .th,.c-purple .t { fill: #3C3489; } .c-purple .ts { fill: #534AB7; }
+    .c-gray   rect { fill: #F1EFE8; stroke: #5F5E5A; } .c-gray   .th,.c-gray   .t { fill: #444441; } .c-gray   .ts { fill: #5F5E5A; }
+    .dim { opacity: 0.45; }
+    @media (prefers-color-scheme: dark) {
+      .t { fill: #E8E6DE; } .ts { fill: #B4B2A9; } .th { fill: #F1EFE8; }
+      .arr { stroke: #9c9a92; } .leader { stroke: #5F5E5A; }
+      .c-amber  rect { fill: #412402; stroke: #EF9F27; } .c-amber  .th,.c-amber  .t { fill: #FAC775; } .c-amber  .ts { fill: #EF9F27; }
+      .c-coral  rect { fill: #4A1B0C; stroke: #F0997B; } .c-coral  .th,.c-coral  .t { fill: #F5C4B3; } .c-coral  .ts { fill: #F0997B; }
+      .c-teal   rect { fill: #04342C; stroke: #5DCAA5; } .c-teal   .th,.c-teal   .t { fill: #9FE1CB; } .c-teal   .ts { fill: #5DCAA5; }
+      .c-blue   rect { fill: #042C53; stroke: #85B7EB; } .c-blue   .th,.c-blue   .t { fill: #B5D4F4; } .c-blue   .ts { fill: #85B7EB; }
+      .c-purple rect { fill: #26215C; stroke: #AFA9EC; } .c-purple .th,.c-purple .t { fill: #CECBF6; } .c-purple .ts { fill: #AFA9EC; }
+      .c-gray   rect { fill: #2C2C2A; stroke: #B4B2A9; } .c-gray   .th,.c-gray   .t { fill: #D3D1C7; } .c-gray   .ts { fill: #B4B2A9; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+<text class="th" x="340" y="28" text-anchor="middle" dominant-baseline="central">Smart Agricultural Workcell</text>
+<text class="ts" x="340" y="50" text-anchor="middle" dominant-baseline="central">Six subsystems of the Intelligent Fluid-Powered Agricultural Manipulation Cell</text>
+
+<g class="c-amber">
+  <rect x="20" y="70" width="300" height="120" rx="8"/>
+  <text class="th" x="170" y="104" text-anchor="middle" dominant-baseline="central">S1 · Hydraulic power</text>
+  <text class="ts" x="170" y="126" text-anchor="middle" dominant-baseline="central">Electric motor + gear pump</text>
+  <text class="ts" x="170" y="145" text-anchor="middle" dominant-baseline="central">Pressure relief · reservoir</text>
+  <text class="ts" x="170" y="164" text-anchor="middle" dominant-baseline="central">Module 05</text>
+</g>
+
+<g class="c-amber">
+  <rect x="360" y="70" width="300" height="120" rx="8"/>
+  <text class="th" x="510" y="104" text-anchor="middle" dominant-baseline="central">S2 · Fluid transport</text>
+  <text class="ts" x="510" y="126" text-anchor="middle" dominant-baseline="central">Hoses · pipes · filter</text>
+  <text class="ts" x="510" y="145" text-anchor="middle" dominant-baseline="central">Return line · reservoir</text>
+  <text class="ts" x="510" y="164" text-anchor="middle" dominant-baseline="central">Modules 03–04</text>
+</g>
+
+<line x1="320" y1="130" x2="358" y2="130" class="arr" marker-end="url(#arrow)" stroke="#BA7517"/>
+
+<g class="c-coral">
+  <rect x="20" y="210" width="300" height="120" rx="8"/>
+  <text class="th" x="170" y="244" text-anchor="middle" dominant-baseline="central">S3 · Motion control</text>
+  <text class="ts" x="170" y="266" text-anchor="middle" dominant-baseline="central">4/3 solenoid DCV</text>
+  <text class="ts" x="170" y="285" text-anchor="middle" dominant-baseline="central">Flow + pressure valves</text>
+  <text class="ts" x="170" y="304" text-anchor="middle" dominant-baseline="central">Module 06</text>
+</g>
+
+<g class="c-coral">
+  <rect x="360" y="210" width="300" height="120" rx="8"/>
+  <text class="th" x="510" y="244" text-anchor="middle" dominant-baseline="central">S4 · Actuation</text>
+  <text class="ts" x="510" y="266" text-anchor="middle" dominant-baseline="central">Primary cylinder 40–63 mm</text>
+  <text class="ts" x="510" y="285" text-anchor="middle" dominant-baseline="central">End-effector actuator</text>
+  <text class="ts" x="510" y="304" text-anchor="middle" dominant-baseline="central">Module 07</text>
+</g>
+
+<line x1="320" y1="270" x2="358" y2="270" class="arr" marker-end="url(#arrow)" stroke="#993C1D"/>
+<line x1="170" y1="190" x2="170" y2="208" class="arr" marker-end="url(#arrow)" stroke="#73726c"/>
+<line x1="510" y1="190" x2="510" y2="208" class="arr" marker-end="url(#arrow)" stroke="#73726c"/>
+
+<g class="c-teal">
+  <rect x="20" y="350" width="300" height="120" rx="8"/>
+  <text class="th" x="170" y="384" text-anchor="middle" dominant-baseline="central">S5 · Sensing &amp; intelligence</text>
+  <text class="ts" x="170" y="406" text-anchor="middle" dominant-baseline="central">Pressure · position · flow · force</text>
+  <text class="ts" x="170" y="425" text-anchor="middle" dominant-baseline="central">Arduino Mega + Raspberry Pi 4</text>
+  <text class="ts" x="170" y="444" text-anchor="middle" dominant-baseline="central">Modules 09–10</text>
+</g>
+
+<g class="c-teal">
+  <rect x="360" y="350" width="300" height="120" rx="8"/>
+  <text class="th" x="510" y="375" text-anchor="middle" dominant-baseline="central">Intelligence pipeline</text>
+  <text class="ts" x="510" y="397" text-anchor="middle" dominant-baseline="central">Sense → Understand → Decide</text>
+  <text class="ts" x="510" y="416" text-anchor="middle" dominant-baseline="central">Command → Actuate → Validate</text>
+  <text class="ts" x="510" y="444" text-anchor="middle" dominant-baseline="central">system_pipeline.md</text>
+</g>
+
+<line x1="320" y1="410" x2="358" y2="410" class="arr" marker-end="url(#arrow)" stroke="#0F6E56"/>
+<line x1="170" y1="330" x2="170" y2="348" class="arr" marker-end="url(#arrow)" stroke="#73726c"/>
+<line x1="510" y1="330" x2="510" y2="348" class="arr" marker-end="url(#arrow)" stroke="#73726c"/>
+
+<g class="c-purple">
+  <rect x="20" y="490" width="640" height="100" rx="8"/>
+  <text class="th" x="340" y="520" text-anchor="middle" dominant-baseline="central">S6 · Digital twin</text>
+  <text class="ts" x="340" y="542" text-anchor="middle" dominant-baseline="central">Pump · valve · cylinder · sensor models running in Python alongside the physical system</text>
+  <text class="ts" x="340" y="561" text-anchor="middle" dominant-baseline="central">Residual analysis · fault detection · monitoring dashboard</text>
+  <text class="ts" x="340" y="578" text-anchor="middle" dominant-baseline="central">Built across Modules 04–10 · Integrated in Module 11 · Demonstrated in Module 12</text>
+</g>
+
+<line x1="170" y1="470" x2="170" y2="488" class="arr" marker-end="url(#arrow)" stroke="#73726c"/>
+<line x1="510" y1="470" x2="510" y2="488" class="arr" marker-end="url(#arrow)" stroke="#73726c"/>
+</svg>
