@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's power source pushes a constant stream of fluid — but a useful machine must *direct* that stream: extend, hold, retract, fast or slow. Without valves, the workcell can do exactly one thing, once. The machine needs a way to turn decisions into motion.
+
+---
+
 ## 1. Why this matters
 
 A pump and a cylinder alone make a machine that does exactly one thing, once. Valves make the machine controllable. They are the interface between the embedded controller's decisions and the cylinder's motion — the bridge between intelligence and action.
@@ -206,6 +212,13 @@ The workcell's end effector must approach a workpiece slowly (40 mm/s) but retra
 - Flow through any valve follows the orifice equation: $Q = C_d A \sqrt{2\Delta P / \rho}$ — flow varies with the square root of pressure drop.
 - Closed-center holds load without pump effort but requires port relief valves for protection.
 - This square-root flow nonlinearity is a central challenge for the control work in Module 10.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now **control where its power goes**. You can specify the valves that route and meter the workcell's flow (4/3 closed-center DCV plus flow and relief valves) — the bridge between the controller's decisions and the cylinder's motion.
 
 ---
 

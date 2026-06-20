@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's twin is only real when it runs. The valve model, force balance, and pressure dynamics must be assembled into one coupled simulation that takes a valve command and predicts the cylinder's full motion over time. The machine needs its first working digital twin.
+
+---
+
 ## 1. Why this matters
 
 This is the payoff lesson of Module 04, and arguably of the curriculum's first half. The previous four lessons built the pieces: the valve flow model (Lesson 02), the force balance (Lesson 03), and the pressure dynamics (Lesson 04). Now we assemble them into a single coupled system of differential equations and solve it numerically.
@@ -190,6 +196,13 @@ You want the workcell to complete a full pick cycle: extend 200 mm, hold 0.5 s (
 With all five lessons complete, you have built the **cylinder digital twin core**: a working simulation (`cylinder_simulation.py`) that predicts the workcell cylinder's motion from a valve command, validated against analytical estimates. This is the foundation that Modules 05–10 extend (real pump, valve, sensor models) and that Module 11 integrates into the full workcell digital twin.
 
 Save your simulation. Every later module adds to it.
+
+---
+
+
+## Machine Capability Added
+
+The machine has a **working digital twin of its cylinder**. `cylinder_simulation.py` predicts position, velocity, and pressures over time from a valve command — the workcell's first motion, simulated in software, and validated against hand calculation. This is the Cylinder Simulation artifact.
 
 ---
 

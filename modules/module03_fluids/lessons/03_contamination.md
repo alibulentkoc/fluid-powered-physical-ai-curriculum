@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's most precise component — its directional control valve — has clearances measured in microns. A single invisible particle can jam it. The workcell needs its fluid kept clean to a defined standard, or its precision degrades and faults appear. The machine needs a cleanliness target and a filter to hold it.
+
+---
+
 ## 1. Why this matters
 
 Module 02 introduced the filter and the Beta ratio. This lesson goes deeper, because contamination is not a side issue — it is *the* dominant cause of hydraulic system failure. Studies across industries consistently attribute the large majority of failures to contaminated fluid, not to design flaws or worn-out parts.
@@ -191,6 +197,13 @@ The workcell is being upgraded with a proportional valve (Module 06) to enable s
 - The most sensitive component sets the system cleanliness target; the workcell's solenoid DCV requires ~18/16/13.
 - The filter Beta ratio must be high enough to achieve and hold the target; particles-passed (not efficiency percentage) is the meaningful measure.
 - The workcell uses a return-line filter with $\beta_{10} \geq 100$, plus a clogging indicator and bypass.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now be **kept clean enough to stay precise**. You can set the workcell's cleanliness target (ISO 18/16/13) and specify the filter that holds it (β₁₀ ≥ 100) — protecting the valve that controls every motion.
 
 ---
 

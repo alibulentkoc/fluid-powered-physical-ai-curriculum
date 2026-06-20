@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's digital twin must predict how much fluid each valve passes, because that flow sets how fast the cylinder moves. Every valve in the workcell is, mathematically, an orifice. The machine needs its first predictive model — the valve.
+
+---
+
 ## 1. Why this matters
 
 This is a milestone lesson. The orifice equation is the mathematical model of every valve in the workcell — the directional control valve, the flow control valve, the relief valve. And it is the **first piece of the digital twin** you will write.
@@ -186,6 +192,13 @@ The workcell's DCV (modeled as an orifice) feeds the primary cylinder. During an
 - The discharge coefficient $C_d$ (~0.62) corrects ideal theory for real-world losses.
 - This valve model is the first digital twin component, written as `orifice_flow.py`, and reused throughout the curriculum.
 - The valve and cylinder dynamics must be solved together because the pressure drop depends on the system state.
+
+---
+
+
+## Machine Capability Added
+
+The machine has its **first digital-twin component**. The valve model (`orifice_flow.py`) predicts flow from command and pressure drop — the input that drives the cylinder simulation, and the first piece of the workcell that exists in software.
 
 ---
 

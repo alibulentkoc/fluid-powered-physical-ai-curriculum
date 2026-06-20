@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: Modules 01-04 complete + Directive 004 (narrative-driven) applied
+Last updated: Directive 005 review gate SATISFIED; Modules 01-04 retrofitted
 
 ---
 
@@ -116,6 +116,19 @@ produces sensible extend-then-hold (~82 mm/s steady, matches hand calc).
 
 ---
 
+## Directive 005 — Preserve the Physical AI Experience: GATE SATISFIED
+
+Review gate cleared before Module 05:
+- docs/MACHINE_STORY.md, docs/BENCHMARK_TASKS.md, docs/MODULE_ARTIFACT_MAP.md created
+- All 17 lessons (M01-04) retrofitted with 'Why The Machine Needs This' + 'Machine Capability Added'
+- All summaries carry Benchmark Task Advanced + Digital Twin Contribution
+- All 4 labs carry the 5-part Lab Report Format
+- README opens machine-first; AD-010 logged
+
+Module 05 is now cleared to begin.
+
+---
+
 ## Central artifacts and manifests
 
 | Item | Status |
@@ -142,6 +155,5 @@ produces sensible extend-then-hold (~82 mm/s steady, matches hand calc).
 
 ## Next action
 
-Module 05 — Hydraulic Pumps and Power Generation. Per Directive 004, lead with the
-machine mission (the machine must generate power), add the pump twin component, and
-include Machine Capability Added + Digital Twin Contribution sections.
+Module 05 — Hydraulic Power Unit Design (artifact). Lead with 'the machine needs power',
+add the pump twin component, advance Precision Positioning, produce the HPU design artifact.

@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's whole purpose is to do physical work — to move and grip objects. All the pumps and valves upstream exist only to deliver power to this point, where fluid finally becomes force and motion. The machine needs an actuator: the muscle that acts on the world.
+
+---
+
 ## 1. Why this matters
 
 The cylinder is the component that does the work the workcell exists to do. Everything upstream — pump, valves, hoses — exists to deliver pressurized fluid to this point, where it becomes force and motion.
@@ -204,6 +210,13 @@ The workcell's end-effector task requires a rotating gripper that must apply 6 N
 - Motor torque $T = D_m \Delta p / 2\pi \cdot \eta_m$; motor speed scales with flow over displacement.
 - Choose a cylinder for finite linear motion with position holding; choose a motor for continuous rotation.
 - The workcell's primary actuator is a cylinder; the end effector may use either, depending on the task.
+
+---
+
+
+## Machine Capability Added
+
+The machine now has **muscle**. You can specify the cylinder that produces the workcell's linear force and motion, and decide between a cylinder and a motor for the end effector — the components that make Precision Positioning and Force-Controlled Interaction physically possible.
 
 ---
 

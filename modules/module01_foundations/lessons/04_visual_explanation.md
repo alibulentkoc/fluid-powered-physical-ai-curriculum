@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine is six subsystems acting as one. Before building any of them, you need to see how they connect — how a single command flows from the brain through the valves to the cylinder and back as sensor feedback. The machine needs you to hold its whole architecture in your head.
+
+---
+
 ## 1. Why this matters
 
 You can know Pascal's Law and still not understand a hydraulic machine. Understanding comes from seeing how the components connect, how energy flows from the motor to the end effector, and where the intelligence enters the system.
@@ -310,6 +316,13 @@ This problem previews Module 11 (fault detection) and Module 12 (capstone troubl
 Read the full capstone architecture document: `curriculum/capstone_architecture.md`
 
 This is the source of truth for everything the workcell will become. Every module will refer to it.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now be **traced end-to-end**. You can follow a command through all six subsystems and explain how each contributes — the mental map that every subsequent module fills in with real detail.
 
 ---
 

@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The Smart Agricultural Workcell does not yet exist for you — it is an idea. Before a single component is chosen, you need to know what the machine is, why it is worth building, and what makes a fluid-powered machine *intelligent* rather than merely powerful. The machine needs you to understand it as a whole system first.
+
+---
+
 ## 1. Why This Matters
 
 Look at a combine harvester. A tractor lifting a bale. A dairy robot positioning itself beside a cow. A hydraulic crane lifting a steel beam.
@@ -268,6 +274,13 @@ The available pump delivers a maximum of 15 LPM. System pressure is limited to 1
 - Force multiplication is real. Energy conservation is inviolable. Both are always true simultaneously.
 
 - The six subsystems of the workcell map directly to the six stages of the intelligence pipeline: SENSE → UNDERSTAND → DECIDE → COMMAND → ACTUATE → VALIDATE.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now be **understood as a complete system**. You can name its six subsystems, explain why it exists, and articulate what separates an intelligent fluid-powered machine from a dumb one. Nothing physical yet — but the whole machine is in view, and every later module attaches to this picture.
 
 ---
 

@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine cannot move until it has a source of pressurized flow. Everything the workcell does — every motion, every grip — begins with hydraulic power, and that power begins at the pump. The machine's first physical need is a heart that pushes fluid.
+
+---
+
 ## 1. Why this matters
 
 In Module 01 you treated the pump as a source — flow appeared at a given pressure and you used it. Now you open the box.
@@ -208,6 +214,13 @@ The workcell is being upgraded for a faster duty cycle requiring 18 LPM at up to
 - For a fixed-displacement pump, flow scales linearly with shaft speed.
 - The workcell uses an 8 cc/rev gear pump at 1450 RPM, delivering ~10.7 LPM actual — matching the 10 LPM requirement with a small margin.
 - Pump selection drives the whole system: it sets flow, which sets actuator speed, and its pressure rating caps available force.
+
+---
+
+
+## Machine Capability Added
+
+The machine now has a **defined power source**. You can specify the pump that gives the workcell its flow (8 cc/rev gear pump at 1450 RPM → ~10.7 LPM) and explain why its choice caps every downstream capability.
 
 ---
 

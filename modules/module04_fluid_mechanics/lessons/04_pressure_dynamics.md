@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine does not respond instantly — pressure builds at a finite rate set by the fluid's stiffness, and that rate limits how fast the workcell can act. The twin must capture this to predict real response times. The machine needs the hydraulic half of its cylinder model.
+
+---
+
 ## 1. Why this matters
 
 A perfectly rigid, incompressible hydraulic system would respond instantly: open the valve and full pressure appears immediately. Real systems do not. Because the fluid is slightly compressible (Module 03's bulk modulus), pressure takes time to build as fluid flows in. This finite response speed is fundamental — it sets how fast the workcell can react, and it is what makes closed-loop control both necessary and challenging.
@@ -187,6 +193,13 @@ The workcell is being evaluated for two configurations: a compact build with 0.1
 - Effective bulk modulus $B_e$ is lower than pure oil due to hose compliance and entrained air, slowing response.
 - The force balance (Lesson 03) and pressure dynamics (this lesson) are coupled — they share velocity and pressure and must be solved together.
 - The complete cylinder model is four coupled first-order ODEs: $\dot{x}, \dot{v}, \dot{P_b}, \dot{P_r}$ — the heart of the digital twin.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now **predict how fast pressure builds**. The pressure-dynamics equation completes the coupled cylinder model — the twin can now predict the workcell's finite response speed, not just its final state.
 
 ---
 

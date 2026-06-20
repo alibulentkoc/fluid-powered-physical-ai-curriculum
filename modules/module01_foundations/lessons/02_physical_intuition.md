@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine moves objects by multiplying force through fluid. Before you can size or simulate anything, you need a gut feel for how pressure becomes force and how flow becomes motion — otherwise the numbers later will be meaningless. The machine needs you to *feel* its physics before you calculate it.
+
+---
+
 ## 1. Why this matters
 
 Equations describe what is already happening. Intuition tells you whether an equation's answer makes sense.
@@ -240,6 +246,13 @@ The servo can apply 15 N to the small piston.
 - Energy is always conserved. Increased force always comes with decreased displacement.
 - Two independent controls govern hydraulic actuators: pressure (force) and flow rate (speed).
 - All three — pressure, flow, and power — can be calculated from basic geometry and Pascal's Law. No advanced mathematics required at this stage.
+
+---
+
+
+## Machine Capability Added
+
+The machine's behavior can now be **reasoned about intuitively**. You can predict, without equations, whether the workcell will push hard or move fast, and you can sanity-check any later calculation against physical intuition — the first defense against a wrong digital twin.
 
 ---
 

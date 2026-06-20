@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's twin must predict how the cylinder *accelerates*, not just how hard it pushes. That requires Newton's second law applied to the moving piston — including the friction that makes slow, precise motion difficult. The machine needs the mechanical half of its cylinder model.
+
+---
+
 ## 1. Why this matters
 
 In Module 01 you calculated the *static* force a cylinder produces. But a moving cylinder is a dynamic system: it accelerates, fights friction, carries a load, and responds to changing pressures. Predicting its actual motion over time requires Newton's second law — a force balance.
@@ -206,6 +212,13 @@ The workcell must position its end effector to within 1 mm during a slow approac
 - The Stribeck effect causes stick-slip at low velocity — a real challenge for the workcell's precision positioning.
 - For simulation, the second-order ODE is split into two first-order equations: $\dot{x}=v$, $\dot{v}=F_{net}/m$.
 - This force balance is the mechanical core of the cylinder's digital twin, paired with pressure dynamics in Lesson 04.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now **predict its cylinder's acceleration**. The force balance (with Stribeck friction) is the mechanical core of the twin — and it explains the stick-slip that threatens Precision Positioning at low speed.
 
 ---
 

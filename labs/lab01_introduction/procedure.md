@@ -114,6 +114,20 @@ Answer in your lab report:
 
 ---
 
+## Lab Report Format
+
+Every lab report for this curriculum follows the same five-part structure. It forces you to connect what you observed to the machine you are building.
+
+1. **Observation** — What happened? Describe what you saw, qualitatively.
+2. **Measurement** — What were the numbers? Record your data and any calculations.
+3. **Engineering Interpretation** — What do the numbers mean physically? Explain the result using the lesson's concepts.
+4. **Machine Implication** — What does this mean for the Smart Agricultural Workcell? Which capability or benchmark task does it affect, and how?
+5. **Digital Twin Implication** — What does this mean for the digital twin? What should the twin predict, or what fault would this reveal as a residual?
+
+The last two parts are the most important. A lab that stops at interpretation is a physics exercise; a lab that reaches the machine and the twin is part of building an intelligent machine.
+
+---
+
 ## Workcell implication
 
 Write 2–3 sentences answering:

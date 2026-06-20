@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's intelligence will depend on predicting how its fluid behaves. Before modeling valves and cylinders, you need the energy bookkeeping that explains why pressure changes as fluid speeds up and slows down through the workcell. The machine needs a conservation law to predict its own flows.
+
+---
+
 ## 1. Why this matters
 
 Module 04 is the mathematical core of the curriculum's first half. The previous modules gave you components (Module 02) and fluid properties (Module 03). This module turns them into equations that *predict behavior* — and those equations become the digital twin.
@@ -186,6 +192,13 @@ The workcell's pump outlet (12 mm diameter) feeds the 10 mm supply line, which f
 - Real systems add a friction head-loss term ($h_{loss}$, from Module 03) to make the energy equation practical.
 - In hydraulics, pressure usually dominates, but at valve restrictions the velocity term becomes large — the domain of the orifice equation.
 - This energy bookkeeping is the foundation for the valve model (Lesson 02) and the cylinder dynamics (Lessons 03–04) that become the digital twin.
+
+---
+
+
+## Machine Capability Added
+
+The machine's **fluid energy can now be accounted for**. You can track how pressure trades against velocity along the workcell's flow path — the foundation for the valve and cylinder models that become the digital twin.
 
 ---
 

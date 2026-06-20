@@ -32,7 +32,13 @@ This is not a crop-specific machine. It is a constrained-workspace manipulation 
 
 ## What You Will Build
 
-> **New here? Start with [`curriculum/CURRICULUM_NARRATIVE.md`](curriculum/CURRICULUM_NARRATIVE.md).** It is the story of the machine you are building — what it is, why it exists, and how it becomes more capable with every module. The narrative is the spine of this curriculum: you are not taking twelve modules, you are building one machine in twelve stages.
+> **New here? Start with the machine.**
+> - [`docs/MACHINE_STORY.md`](docs/MACHINE_STORY.md) — what the machine is, what it does, and what makes it intelligent
+> - [`docs/BENCHMARK_TASKS.md`](docs/BENCHMARK_TASKS.md) — the three tasks the machine must perform
+> - [`docs/MODULE_ARTIFACT_MAP.md`](docs/MODULE_ARTIFACT_MAP.md) — the tangible artifact each module produces
+> - [`curriculum/CURRICULUM_NARRATIVE.md`](curriculum/CURRICULUM_NARRATIVE.md) — how the machine becomes more capable, stage by stage
+>
+> You are not taking twelve modules. You are building one machine in twelve stages. The machine is the story; the modules are chapters.
 
 By the end of this curriculum, you will understand, simulate, and physically prototype key elements of an intelligent electro-hydraulic manipulation system. The capstone integrates:
 

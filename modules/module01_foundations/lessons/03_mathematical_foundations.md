@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine must hit specific numbers: ~20 kN of grip force, ~85 mm/s of motion, under 2 kW of power. Intuition alone cannot size a cylinder or pick a motor. The machine needs the three governing equations that turn its required behavior into concrete dimensions.
+
+---
+
 ## 1. Why this matters
 
 The workcell's cylinder must exert 500 N to grip a fruit without damaging it. The pump delivers 12 LPM. The maximum system pressure is 120 bar. Can the system do the job? Which cylinder bore is needed? How fast will the piston extend?
@@ -342,6 +348,13 @@ The workcell is being specified for a heavier variant: gripping and lifting 5 kg
 - The differential cylinder effect means retract is always faster and weaker than extend at equal pressure and flow.
 - Efficiency is never 100%. Always size the motor for $P_{hyd} / \eta_{pump}$.
 - The Smart Agricultural Workcell at baseline (10 LPM, 100 bar) requires approximately 2 kW from the motor — a small machine with substantial force capability.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now be **quantified**. You can compute its force, velocity, and power from first principles — the calculations that size every actuator and that the digital twin will eventually evaluate in real time.
 
 ---
 

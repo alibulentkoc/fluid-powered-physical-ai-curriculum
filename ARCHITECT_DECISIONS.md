@@ -138,3 +138,21 @@ A log of significant design choices made during curriculum development. Each ent
 1. Precision Positioning (heavy in Modules 04–08)
 2. Force-Controlled Interaction (heavy in Modules 06–10)
 3. Intelligent Manipulation (heavy in Modules 09–12)
+
+---
+
+## AD-010 — Preserve the Physical AI experience (Directive 005)
+
+**Decision:** The student experience must mirror the Physical AI Curriculum — students continuously watch an intelligent machine become more capable. Hydraulics is a tool used to build the machine, never the subject itself. Directive 005 added a review gate enforced before Module 05.
+
+**Implementation (gate satisfied):**
+- Created three first-class `docs/` artifacts: `MACHINE_STORY.md` (the machine itself), `BENCHMARK_TASKS.md` (the three tasks with success criteria), `MODULE_ARTIFACT_MAP.md` (tangible artifact per module).
+- Retrofitted ALL 17 lessons in Modules 01–04 with two mandatory sections: `## Why The Machine Needs This` (opens every lesson, before theory) and `## Machine Capability Added` (closes every lesson, concrete).
+- Confirmed every module summary carries Machine Capability Added, Benchmark Task Advanced, and Digital Twin Contribution.
+- Added the mandated 5-part Lab Report Format (Observation, Measurement, Engineering Interpretation, Machine Implication, Digital Twin Implication) to all four labs.
+- README now opens with the machine-first doc set.
+
+**Rationale:** Defends against the standing risk of the curriculum degrading into "a high-quality hydraulics textbook." Organize around machine capabilities (the machine needs power / motion / force / awareness / intelligence / validation), introduce hydraulic concepts only when the machine requires them.
+
+**Per-module artifact commitment (from MODULE_ARTIFACT_MAP):**
+M01 System Concept Diagram · M02 Hardware Architecture · M03 Fluid Specification · M04 Cylinder Simulation · M05 Hydraulic Power Unit Design · M06 Motion Control Architecture · M07 Actuator Selection Report · M08 Integrated Hydraulic Circuit · M09 Sensor Layer · M10 Embedded Control System · M11 Integrated Digital Twin · M12 Demonstration System.

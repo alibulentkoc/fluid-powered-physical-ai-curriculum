@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine transmits all of its power through a fluid. That fluid is not filler — it is the medium that carries force from pump to cylinder, and its compressibility decides whether the machine responds crisply or spongily. The machine needs the right fluid to move at all.
+
+---
+
 ## 1. Why this matters
 
 It is easy to think of hydraulic fluid as just the stuff that fills the system. It is not. The fluid *is* how power moves from the pump to the cylinder. Its properties decide how efficiently energy transmits, how long the components last, and how the system behaves hot or cold.
@@ -171,6 +177,13 @@ A workcell is being tested and the operator notices the cylinder responds sluggi
 - High bulk modulus (≈1.8 GPa for clean oil) means a stiff, responsive system; entrained air drastically lowers the effective value and causes sponginess.
 - The pressure rise rate $dP/dt = B/V \cdot (Q_{in} - Q_{out})$ depends on bulk modulus and is central to the digital twin.
 - Fluid requirements depend on the operating environment; the indoor workcell can use standard ISO VG 46 mineral oil.
+
+---
+
+
+## Machine Capability Added
+
+The machine's **power-transmission medium is understood**. You can explain why near-incompressibility makes the workcell responsive, and why trapped air would make it sluggish and unpredictable — the first parameter (bulk modulus) the digital twin will need.
 
 ---
 

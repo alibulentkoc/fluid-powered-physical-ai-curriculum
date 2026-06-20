@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine's fluid must be thin enough to pump when cold yet thick enough to seal when hot. Choose the wrong viscosity and the workcell either starves its pump at startup or leaks away its precision when warm. The machine needs a fluid matched to its operating temperatures.
+
+---
+
 ## 1. Why this matters
 
 If you remember one number about a hydraulic fluid, it is its viscosity. Viscosity controls how easily the fluid flows, how well it seals clearances, how much energy is lost to friction, and whether the pump can draw it at startup.
@@ -191,6 +197,13 @@ The workcell is being considered for a semi-outdoor deployment in a barn, where 
 - Viscosity Index measures temperature stability; high VI means a flatter curve and a wider operating window.
 - The Walther equation predicts viscosity at any temperature from two known points.
 - The fluid must stay within the pump's acceptable viscosity band across the operating temperature range; VG 46 suits the indoor workcell's 40–60°C window.
+
+---
+
+
+## Machine Capability Added
+
+The machine's **fluid grade can now be selected**. You can model viscosity across temperature and confirm ISO VG 46 keeps the workcell inside its pump's safe window — protecting the repeatable motion that Precision Positioning depends on.
 
 ---
 

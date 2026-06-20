@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine will run for years only if its fluid stays clean, cool, and contained. Most hydraulic machines die of contamination, not worn-out muscle. The workcell needs the unglamorous support components that keep everything else alive.
+
+---
+
 ## 1. Why this matters
 
 Ask an experienced hydraulic technician what kills systems, and the answer is rarely "the pump failed" or "the cylinder broke." It is almost always contamination — dirt, water, or wear particles in the fluid that score valve spools, erode pump internals, and tear seals.
@@ -202,6 +208,13 @@ A workcell is being commissioned and the DCV begins sticking intermittently afte
 ## Module 02 deliverable
 
 With all four lessons complete, produce the first **Component Map** of the Smart Agricultural Workcell: a block diagram naming the actual components for Subsystems 1 and 2 (pump type and size, valve types, cylinder dimensions, reservoir volume, filter rating, fitting standard). This is the foundation for the detailed sizing work in Modules 05–08.
+
+---
+
+
+## Machine Capability Added
+
+The machine can now **stay healthy over time**. You can specify the reservoir, filter, hoses, and fittings that protect the workcell from the contamination that would otherwise destroy its valves and seals — completing the Hardware Architecture.
 
 ---
 

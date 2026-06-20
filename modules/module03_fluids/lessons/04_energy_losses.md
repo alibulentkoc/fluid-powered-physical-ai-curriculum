@@ -5,6 +5,12 @@
 
 ---
 
+## Why The Machine Needs This
+
+The machine loses pressure to friction as fluid travels from pump to cylinder — and undersized lines waste that pressure as heat, starving the actuator. The workcell needs its lines sized so the power generated actually reaches the muscle. The machine needs an efficient path for its fluid.
+
+---
+
 ## 1. Why this matters
 
 The ideal equations of Module 01 assumed pressure transmitted perfectly from pump to actuator. Reality is lossier. As fluid flows through hoses, pipes, and fittings, friction converts some of the pressure energy into heat. The pump must supply that lost pressure on top of what the actuator needs.
@@ -213,6 +219,13 @@ The workcell's primary cylinder is mounted at the end of a moving arm, requiring
 ## Module 03 deliverable
 
 With all four lessons complete, produce the **Fluid Specification Document** for the Smart Agricultural Workcell — one page covering: fluid type (mineral-based), ISO VG grade (46), operating temperature range and the usable viscosity window, ISO 4406 cleanliness target (18/16/13), filter specification ($\beta_{10} \geq 100$), and the supply-line sizing (10 mm). Include the rationale for each choice, grounded in the workcell's indoor operating environment.
+
+---
+
+
+## Machine Capability Added
+
+The machine's **fluid path can now be sized**. You can compute line losses and choose the workcell's supply line (10 mm, ~0.54 bar loss) so power reaches the cylinder efficiently — completing the Fluid Specification.
 
 ---
 
