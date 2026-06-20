@@ -85,13 +85,13 @@ Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
 | lessons/04_visual_explanation.md | ✅ |
 | summary.md | ✅ |
 | exercises/problem_set_01.md | ✅ |
-| exercises/knowledge_check_01.md | 🔲 |
+| exercises/knowledge_check_01.md | ✅ |
 
 ## Modules 02–12 — Lesson Content
 | Module | Status |
 |--------|--------|
-| 02 | 🔲 |
-| 03 | 🔲 |
+| 02 | ✅ COMPLETE (lessons, summary, code, exercises, lab) |
+| 03 | ✅ COMPLETE (lessons, summary, code×4, exercises, lab) |
 | 04 | 🔲 |
 | 05 | 🔲 |
 | 06 | 🔲 |
@@ -109,7 +109,7 @@ Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
 |------|--------|
 | code/module01/pascals_law.py | ✅ Tested |
 | code/module01/unit_converter.py | ✅ Tested |
-| code/module02/pump_flow_model.py | 🔲 |
+| code/module02/pump_flow_model.py | ✅ tested |
 | code/module03/viscosity_model.py | 🔲 |
 | code/module03/pipe_friction.py | 🔲 |
 | code/module04/orifice_flow.py | 🔲 |
@@ -138,7 +138,7 @@ Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
 | File | Status |
 |------|--------|
 | labs/lab01_introduction/procedure.md | ✅ |
-| labs/lab01_introduction/equipment.md | 🔲 |
+| labs/lab01_introduction/equipment.md | ✅ |
 | labs/lab02_component_identification/ | 🔲 |
 | labs/lab03_viscosity/ | 🔲 |
 | labs/lab04_step_response/ | 🔲 |

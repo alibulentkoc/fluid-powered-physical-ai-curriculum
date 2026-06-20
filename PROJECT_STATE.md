@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: Visual QA complete + Module 01 finalized
+Last updated: Modules 01-03 complete
 
 ---
 
@@ -55,6 +55,45 @@ the baseline workcell numbers (19.63 kN extend, 84.9 mm/s, 1.67 kW) consistently
 
 ---
 
+## Module 02 — Lessons COMPLETE
+
+| File | Status |
+|------|--------|
+| curriculum/module02_manifest.md | ✅ |
+| modules/module02_components/lessons/01_pumps.md | ✅ |
+| modules/module02_components/lessons/02_valves.md | ✅ |
+| modules/module02_components/lessons/03_cylinders_and_motors.md | ✅ |
+| modules/module02_components/lessons/04_support_system.md | ✅ |
+| modules/module02_components/summary.md | ✅ |
+| code/module02/pump_flow_model.py | ✅ tested |
+
+Module 02: COMPLETE — lessons, summary, code, exercises (problem set + knowledge check), Lab 02 procedure.
+
+---
+
+## Module 03 — COMPLETE
+
+| File | Status |
+|------|--------|
+| curriculum/module03_manifest.md | ✅ |
+| modules/module03_fluids/lessons/01_what_fluid_does.md | ✅ |
+| modules/module03_fluids/lessons/02_viscosity.md | ✅ |
+| modules/module03_fluids/lessons/03_contamination.md | ✅ |
+| modules/module03_fluids/lessons/04_energy_losses.md | ✅ |
+| modules/module03_fluids/summary.md | ✅ |
+| modules/module03_fluids/exercises/problem_set_03.md | ✅ |
+| modules/module03_fluids/exercises/knowledge_check_03.md | ✅ |
+| labs/lab03_viscosity/procedure.md | ✅ |
+| code/module03/bulk_modulus_demo.py | ✅ tested |
+| code/module03/viscosity_model.py | ✅ tested |
+| code/module03/cleanliness_calculator.py | ✅ tested |
+| code/module03/pipe_friction.py | ✅ tested |
+
+All numerical claims verified against running code (one bulk-modulus
+arithmetic error in a draft was caught and corrected this way).
+
+---
+
 ## Central artifacts and manifests
 
 | Item | Status |
@@ -70,7 +109,7 @@ the baseline workcell numbers (19.63 kN extend, 84.9 mm/s, 1.67 kW) consistently
 
 ## What still needs work
 
-- Module 01: knowledge_check_01.md, lab01 equipment.md (minor supporting files)
+- Module 01: COMPLETE (all lessons, summary, problem set, knowledge check, lab procedure + equipment, both code files)
 - Modules 02–12: lesson content (manifests exist; content not started)
 - Coaches: tutor prompts, instructor guides, capstone rubric
 - docs/: course_overview, philosophy, prerequisites, assessment_guide
@@ -81,5 +120,5 @@ the baseline workcell numbers (19.63 kN extend, 84.9 mm/s, 1.67 kW) consistently
 
 ## Next action
 
-Module 02 lesson content, using Module 01 as the reference standard for tone,
-structure, equation density, visual integration, and capstone connection.
+Module 04 — Fluid Mechanics for Intelligent Machines (the math core: cylinder ODE,
+first digital twin component).
