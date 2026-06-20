@@ -18,6 +18,9 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 
+# Generated artifacts (e.g. matplotlib plot output)
+*.png
+
 # OS / editor
 .DS_Store
 Thumbs.db
