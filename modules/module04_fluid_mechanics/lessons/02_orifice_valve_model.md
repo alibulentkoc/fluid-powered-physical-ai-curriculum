@@ -9,6 +9,8 @@
 
 The machine's digital twin must predict how much fluid each valve passes, because that flow sets how fast the cylinder moves. Every valve in the workcell is, mathematically, an orifice. The machine needs its first predictive model — the valve.
 
+**Benchmark task supported:** Precision Positioning (predicting valve flow → cylinder speed).
+
 ---
 
 ## 1. Why this matters
@@ -197,6 +199,10 @@ The workcell's DCV (modeled as an orifice) feeds the primary cylinder. During an
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** predict how much flow a valve passes for a given command.
+>
+> **After this lesson the machine can:** predict valve flow from command and pressure drop in software (orifice_flow.py) — the first digital-twin component.
 
 The machine has its **first digital-twin component**. The valve model (`orifice_flow.py`) predicts flow from command and pressure drop — the input that drives the cylinder simulation, and the first piece of the workcell that exists in software.
 

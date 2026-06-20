@@ -156,3 +156,38 @@ A log of significant design choices made during curriculum development. Each ent
 
 **Per-module artifact commitment (from MODULE_ARTIFACT_MAP):**
 M01 System Concept Diagram · M02 Hardware Architecture · M03 Fluid Specification · M04 Cylinder Simulation · M05 Hydraulic Power Unit Design · M06 Motion Control Architecture · M07 Actuator Selection Report · M08 Integrated Hydraulic Circuit · M09 Sensor Layer · M10 Embedded Control System · M11 Integrated Digital Twin · M12 Demonstration System.
+
+---
+
+## AD-011 — Physical AI experience preservation (Directive 006)
+
+**Decision:** Technical correctness is not the success criterion; the success criterion is whether the curriculum *feels* like the Physical AI Curriculum — students watching an intelligent machine become more capable. Directive 006 set a review gate before Module 05 with the Physical AI lesson pattern (Machine Problem → Concept → Mathematical Model → Computational Model → Machine Improvement) and four narrative quality tests.
+
+**Implementation (gate satisfied):**
+- Created `docs/PHYSICAL_AI_STYLE_GUIDE.md` — mandatory reading before any lesson development; codifies the lesson pattern, four quality tests, and writing/figure/code/lab rules.
+- Created `curriculum/CAPABILITY_GROWTH_MAP.md` — the machine's evolution at a glance (Module | Capability | Benchmark Task | Artifact | Twin Contribution).
+- Performed and documented a narrative review (`docs/NARRATIVE_REVIEW_01-04.md`); identified 4 weak openings that led with the curriculum/concept rather than the machine's problem and rewrote them (contamination, bernoulli, simulation, what-fluid-does).
+- Added explicit before/after capability statements ("Before this lesson the machine could not… / After this lesson the machine can…") to all 17 lessons.
+- Added benchmark-task identification to all 17 lessons.
+- Added missing digital-twin contributions to the 4 lessons that lacked them.
+
+**Four narrative quality tests — all 17 lessons pass:** Machine Necessity, Capability Growth, Digital Twin, Machine Sketch.
+
+**Standing principle:** When a development decision is unclear, choose the option that strengthens the machine's story.
+
+---
+
+## AD-012 — Module 05 built natively to Physical AI standard (Directive 007)
+
+**Decision:** Module 05 ("Powering the Smart Agricultural Workcell," not "Hydraulic Pumps") is the first module developed entirely under the Physical AI narrative standard — the test of whether the curriculum transitions from hydraulics course to Fluid-Powered Physical AI curriculum.
+
+**Implementation:**
+- Four lessons to the directive's structure: (01) why the machine needs hydraulic power, (02) which pump — framed as a selection decision, not a catalog, (03) performance & efficiency, (04) designing the HPU (produces the artifact).
+- All four lessons carry the four mandatory sections (Why The Machine Needs This, Benchmark task supported, Digital twin contribution, Machine Capability Added).
+- `pump_performance_model.py` — flow, hydraulic/shaft power, efficiencies (volumetric drooping with pressure), pump curves, and the HPU design generator. Tested; all lesson numbers verified against it.
+- Lab 05 (Hydraulic Power Unit Investigation) with the 5-part report (Observation → Measurement → Engineering Interpretation → Machine Improvement → Digital Twin Improvement).
+- Artifact: Hydraulic Power Unit Design (Subsystem 1 of the final machine).
+
+**Numerical reconciliation:** motor sizing standardized on the 2.2 kW frame (service-factor capability 2.53 kW ≥ 2.15 kW shaft load) consistent with Modules 01–02, after the code initially flagged a 3.0 kW result from a naive margin approach. All numbers verified against tested code.
+
+**Architect quality check — all YES:** machine gains visible capability (generate power); Benchmark Task 1 improves (impossible → powered); twin more capable (pump/power/efficiency model); student builds a machine, not studies pumps.

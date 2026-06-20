@@ -9,13 +9,15 @@
 
 The machine's intelligence will depend on predicting how its fluid behaves. Before modeling valves and cylinders, you need the energy bookkeeping that explains why pressure changes as fluid speeds up and slows down through the workcell. The machine needs a conservation law to predict its own flows.
 
+**Benchmark task supported:** Precision Positioning (predicting flow, the basis of motion).
+
 ---
 
 ## 1. Why this matters
 
-Module 04 is the mathematical core of the curriculum's first half. The previous modules gave you components (Module 02) and fluid properties (Module 03). This module turns them into equations that *predict behavior* — and those equations become the digital twin.
+The machine's intelligence rests on a single ability: predicting what its own fluid will do. The digital twin cannot model a valve or a cylinder until it can answer a more basic question — when fluid speeds up through a narrowing and slows in a widening, how does its pressure change? Get this wrong and every downstream prediction is wrong.
 
-Bernoulli's equation is the foundation. It is the statement of energy conservation for a moving fluid, and it explains why pressure changes as fluid speeds up or slows down, why velocity rises through a restriction, and how to estimate conditions at points along the workcell's flow path. Before we can model the cylinder's dynamics (the heart of the twin), we need this energy bookkeeping.
+That question is answered by energy conservation for a moving fluid: Bernoulli's equation. It is the foundation the valve model (next lesson) and the cylinder model are built on. Before the machine can predict how it moves, it must account for where its fluid's energy goes.
 
 ---
 
@@ -197,6 +199,10 @@ The workcell's pump outlet (12 mm diameter) feeds the 10 mm supply line, which f
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** account for where its fluid's energy goes as it moves.
+>
+> **After this lesson the machine can:** track how pressure trades against velocity along its flow path — the foundation of the valve and cylinder models.
 
 The machine's **fluid energy can now be accounted for**. You can track how pressure trades against velocity along the workcell's flow path — the foundation for the valve and cylinder models that become the digital twin.
 

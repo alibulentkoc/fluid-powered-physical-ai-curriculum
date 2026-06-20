@@ -9,6 +9,8 @@
 
 The machine's twin must predict how the cylinder *accelerates*, not just how hard it pushes. That requires Newton's second law applied to the moving piston — including the friction that makes slow, precise motion difficult. The machine needs the mechanical half of its cylinder model.
 
+**Benchmark task supported:** Precision Positioning and Force-Controlled Interaction (predicting cylinder dynamics).
+
 ---
 
 ## 1. Why this matters
@@ -217,6 +219,10 @@ The workcell must position its end effector to within 1 mm during a slow approac
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** predict how its cylinder accelerates under real forces.
+>
+> **After this lesson the machine can:** predict cylinder acceleration from a force balance including Stribeck friction — the mechanical core of the twin.
 
 The machine can now **predict its cylinder's acceleration**. The force balance (with Stribeck friction) is the mechanical core of the twin — and it explains the stick-slip that threatens Precision Positioning at low speed.
 

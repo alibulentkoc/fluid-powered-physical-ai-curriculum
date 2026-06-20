@@ -9,6 +9,8 @@
 
 The machine loses pressure to friction as fluid travels from pump to cylinder — and undersized lines waste that pressure as heat, starving the actuator. The workcell needs its lines sized so the power generated actually reaches the muscle. The machine needs an efficient path for its fluid.
 
+**Benchmark task supported:** Precision Positioning (delivering power efficiently to the actuator).
+
 ---
 
 ## 1. Why this matters
@@ -224,6 +226,10 @@ With all four lessons complete, produce the **Fluid Specification Document** for
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** deliver its generated power efficiently to the cylinder.
+>
+> **After this lesson the machine can:** have its supply line sized (10 mm, ~0.54 bar loss) so power reaches the actuator instead of becoming heat.
 
 The machine's **fluid path can now be sized**. You can compute line losses and choose the workcell's supply line (10 mm, ~0.54 bar loss) so power reaches the cylinder efficiently — completing the Fluid Specification.
 

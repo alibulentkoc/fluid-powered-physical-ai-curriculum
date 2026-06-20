@@ -9,6 +9,8 @@
 
 The machine's fluid must be thin enough to pump when cold yet thick enough to seal when hot. Choose the wrong viscosity and the workcell either starves its pump at startup or leaks away its precision when warm. The machine needs a fluid matched to its operating temperatures.
 
+**Benchmark task supported:** Precision Positioning (repeatable motion across temperature).
+
 ---
 
 ## 1. Why this matters
@@ -203,8 +205,14 @@ The workcell is being considered for a semi-outdoor deployment in a barn, where 
 
 ## Machine Capability Added
 
+> **Before this lesson the machine could not:** keep its fluid in the pump's usable range across temperature.
+>
+> **After this lesson the machine can:** have its fluid grade (ISO VG 46) selected and verified to stay in the pump's safe viscosity window across its operating temperatures.
+
 The machine's **fluid grade can now be selected**. You can model viscosity across temperature and confirm ISO VG 46 keeps the workcell inside its pump's safe window — protecting the repeatable motion that Precision Positioning depends on.
 
+
+**Digital twin contribution:** the viscosity-versus-temperature model gives the twin a temperature-dependent viscosity instead of a fixed constant — essential for predicting flow and line losses accurately as the machine warms.
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — Contamination, filtration, and ISO cleanliness*

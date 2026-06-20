@@ -9,6 +9,8 @@
 
 The machine moves objects by multiplying force through fluid. Before you can size or simulate anything, you need a gut feel for how pressure becomes force and how flow becomes motion — otherwise the numbers later will be meaningless. The machine needs you to *feel* its physics before you calculate it.
 
+**Benchmark task supported:** Precision Positioning (intuition for force vs. motion).
+
 ---
 
 ## 1. Why this matters
@@ -251,6 +253,10 @@ The servo can apply 15 N to the small piston.
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** be reasoned about without doing formal calculations.
+>
+> **After this lesson the machine can:** have its force-versus-speed behavior predicted by intuition alone, giving a sanity check on every later calculation.
 
 The machine's behavior can now be **reasoned about intuitively**. You can predict, without equations, whether the workcell will push hard or move fast, and you can sanity-check any later calculation against physical intuition — the first defense against a wrong digital twin.
 

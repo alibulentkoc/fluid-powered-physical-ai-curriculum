@@ -9,6 +9,8 @@
 
 The Smart Agricultural Workcell does not yet exist for you — it is an idea. Before a single component is chosen, you need to know what the machine is, why it is worth building, and what makes a fluid-powered machine *intelligent* rather than merely powerful. The machine needs you to understand it as a whole system first.
 
+**Benchmark task supported:** All three benchmark tasks (this lesson establishes the machine the tasks run on).
+
 ---
 
 ## 1. Why This Matters
@@ -279,6 +281,10 @@ The available pump delivers a maximum of 15 LPM. System pressure is limited to 1
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** explain what it is, why it exists, or what makes it intelligent.
+>
+> **After this lesson the machine can:** describe itself as a complete six-subsystem system and articulate what separates an intelligent fluid-powered machine from a merely powerful one.
 
 The machine can now be **understood as a complete system**. You can name its six subsystems, explain why it exists, and articulate what separates an intelligent fluid-powered machine from a dumb one. Nothing physical yet — but the whole machine is in view, and every later module attaches to this picture.
 

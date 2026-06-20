@@ -9,6 +9,8 @@
 
 The machine's power source pushes a constant stream of fluid — but a useful machine must *direct* that stream: extend, hold, retract, fast or slow. Without valves, the workcell can do exactly one thing, once. The machine needs a way to turn decisions into motion.
 
+**Benchmark task supported:** Precision Positioning and Force-Controlled Interaction (directing and metering motion).
+
 ---
 
 ## 1. Why this matters
@@ -217,6 +219,10 @@ The workcell's end effector must approach a workpiece slowly (40 mm/s) but retra
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** direct its flow — it could only push fluid one way, uncontrolled.
+>
+> **After this lesson the machine can:** route and meter its flow to extend, hold, or retract on command via a specified valve set.
 
 The machine can now **control where its power goes**. You can specify the valves that route and meter the workcell's flow (4/3 closed-center DCV plus flow and relief valves) — the bridge between the controller's decisions and the cylinder's motion.
 

@@ -9,6 +9,8 @@
 
 The machine's whole purpose is to do physical work — to move and grip objects. All the pumps and valves upstream exist only to deliver power to this point, where fluid finally becomes force and motion. The machine needs an actuator: the muscle that acts on the world.
 
+**Benchmark task supported:** Force-Controlled Interaction (the actuator that produces force).
+
 ---
 
 ## 1. Why this matters
@@ -216,8 +218,14 @@ The workcell's end-effector task requires a rotating gripper that must apply 6 N
 
 ## Machine Capability Added
 
+> **Before this lesson the machine could not:** convert its fluid power into useful motion or force.
+>
+> **After this lesson the machine can:** produce sized linear force and motion through a specified cylinder — the muscle that acts on the world.
+
 The machine now has **muscle**. You can specify the cylinder that produces the workcell's linear force and motion, and decide between a cylinder and a motor for the end effector — the components that make Precision Positioning and Force-Controlled Interaction physically possible.
 
+
+**Digital twin contribution:** the cylinder's bore, rod, and stroke dimensions become the geometric parameters of the twin's cylinder model (built in Module 04, tuned in Module 07).
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — The support system: reservoir, filter, hoses, fittings*

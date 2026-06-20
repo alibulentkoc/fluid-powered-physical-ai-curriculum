@@ -9,11 +9,15 @@
 
 The machine's most precise component — its directional control valve — has clearances measured in microns. A single invisible particle can jam it. The workcell needs its fluid kept clean to a defined standard, or its precision degrades and faults appear. The machine needs a cleanliness target and a filter to hold it.
 
+**Benchmark task supported:** Precision Positioning (protecting the motion-control valve).
+
 ---
 
 ## 1. Why this matters
 
-Module 02 introduced the filter and the Beta ratio. This lesson goes deeper, because contamination is not a side issue — it is *the* dominant cause of hydraulic system failure. Studies across industries consistently attribute the large majority of failures to contaminated fluid, not to design flaws or worn-out parts.
+The machine controls every one of its motions through a single valve whose spool fits its bore with clearances measured in microns. A particle smaller than you can see — drifting in the fluid — can score that spool or jam it. When that happens, the workcell's motion becomes erratic and its faults multiply. This is not a rare failure mode: contamination is *the* dominant cause of hydraulic system failure, blamed across industries for the large majority of breakdowns — far more than design flaws or worn-out parts.
+
+So the machine has a problem it cannot ignore: its precision depends on a component that invisible dirt can destroy. To keep the workcell working, you must keep its fluid clean to a defined standard and prove you are doing so. That requires a way to *measure* cleanliness and a filter sized to *hold* it.
 
 For the Smart Agricultural Workcell, the directional control valve is the most contamination-sensitive component, with micron-scale clearances between its spool and bore. A single particle of the wrong size can score the spool or cause it to stick. Specifying the right cleanliness target and the right filter to achieve it is the difference between a workcell that runs reliably and one that suffers mysterious intermittent faults. This lesson gives you the standard (ISO 4406) and the method.
 
@@ -202,6 +206,10 @@ The workcell is being upgraded with a proportional valve (Module 06) to enable s
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** protect its precision valve from the dirt that jams it.
+>
+> **After this lesson the machine can:** be held to a defined cleanliness target (ISO 18/16/13) by a correctly-sized filter (β10 ≥ 100), protecting the valve that controls every motion.
 
 The machine can now be **kept clean enough to stay precise**. You can set the workcell's cleanliness target (ISO 18/16/13) and specify the filter that holds it (β₁₀ ≥ 100) — protecting the valve that controls every motion.
 

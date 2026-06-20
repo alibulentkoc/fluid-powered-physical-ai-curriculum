@@ -9,6 +9,8 @@
 
 The machine must hit specific numbers: ~20 kN of grip force, ~85 mm/s of motion, under 2 kW of power. Intuition alone cannot size a cylinder or pick a motor. The machine needs the three governing equations that turn its required behavior into concrete dimensions.
 
+**Benchmark task supported:** Precision Positioning and Force-Controlled Interaction (sizing force, speed, power).
+
 ---
 
 ## 1. Why this matters
@@ -353,6 +355,10 @@ The workcell is being specified for a heavier variant: gripping and lifting 5 kg
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** be sized — its force, speed, and power were only qualitative.
+>
+> **After this lesson the machine can:** have its force (~20 kN), velocity (~85 mm/s), and power (~1.7 kW) computed from first principles, sizing every actuator.
 
 The machine can now be **quantified**. You can compute its force, velocity, and power from first principles — the calculations that size every actuator and that the digital twin will eventually evaluate in real time.
 

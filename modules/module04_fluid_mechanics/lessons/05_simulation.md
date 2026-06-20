@@ -9,13 +9,15 @@
 
 The machine's twin is only real when it runs. The valve model, force balance, and pressure dynamics must be assembled into one coupled simulation that takes a valve command and predicts the cylinder's full motion over time. The machine needs its first working digital twin.
 
+**Benchmark task supported:** Precision Positioning (the simulated cylinder trajectory).
+
 ---
 
 ## 1. Why this matters
 
-This is the payoff lesson of Module 04, and arguably of the curriculum's first half. The previous four lessons built the pieces: the valve flow model (Lesson 02), the force balance (Lesson 03), and the pressure dynamics (Lesson 04). Now we assemble them into a single coupled system of differential equations and solve it numerically.
+The machine's digital twin, so far, is a set of equations on paper — a valve model, a force balance, a pressure-rise law. Equations on paper cannot predict anything. For the twin to be real, those equations must be assembled into one coupled system and *run*: given a valve command, compute the cylinder's position, velocity, and pressures at every instant.
 
-The result is the first *simulation* of the workcell's cylinder — a software model that takes a valve command and predicts how the real cylinder will move, instant by instant. This is precisely what a digital twin does. When you finish this lesson, you will have run the first working component of the Smart Agricultural Workcell's digital twin, and you will understand both how it works and where its limits are.
+That is the machine's problem in this lesson: turn the scattered equations into a living prediction. The result is the workcell's first working digital twin — software that watches the machine's cylinder move before the cylinder is ever built.
 
 ---
 
@@ -201,6 +203,10 @@ Save your simulation. Every later module adds to it.
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** simulate its own motion — the twin was equations on paper.
+>
+> **After this lesson the machine can:** run a working digital twin that predicts its cylinder's full trajectory from a valve command, validated against hand calculation.
 
 The machine has a **working digital twin of its cylinder**. `cylinder_simulation.py` predicts position, velocity, and pressures over time from a valve command — the workcell's first motion, simulated in software, and validated against hand calculation. This is the Cylinder Simulation artifact.
 

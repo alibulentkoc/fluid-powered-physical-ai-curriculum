@@ -9,6 +9,8 @@
 
 The machine does not respond instantly — pressure builds at a finite rate set by the fluid's stiffness, and that rate limits how fast the workcell can act. The twin must capture this to predict real response times. The machine needs the hydraulic half of its cylinder model.
 
+**Benchmark task supported:** Precision Positioning (predicting response speed).
+
 ---
 
 ## 1. Why this matters
@@ -198,6 +200,10 @@ The workcell is being evaluated for two configurations: a compact build with 0.1
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** predict how fast pressure (and therefore force) builds.
+>
+> **After this lesson the machine can:** predict its finite pressure-rise rate, completing the coupled cylinder model the twin runs.
 
 The machine can now **predict how fast pressure builds**. The pressure-dynamics equation completes the coupled cylinder model — the twin can now predict the workcell's finite response speed, not just its final state.
 

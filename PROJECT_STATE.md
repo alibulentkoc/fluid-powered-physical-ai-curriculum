@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: Directive 005 review gate SATISFIED; Modules 01-04 retrofitted
+Last updated: Module 05 COMPLETE (Directive 007) — first module built natively to Physical AI pattern
 
 ---
 
@@ -155,5 +155,5 @@ Module 05 is now cleared to begin.
 
 ## Next action
 
-Module 05 — Hydraulic Power Unit Design (artifact). Lead with 'the machine needs power',
-add the pump twin component, advance Precision Positioning, produce the HPU design artifact.
+Module 06 — Controlling the Machine's Motion (valves). Machine-problem-first per the
+style guide. Artifact: Motion Control Architecture. Benchmark: Precision Positioning + Force.

@@ -9,6 +9,8 @@
 
 The machine cannot move until it has a source of pressurized flow. Everything the workcell does — every motion, every grip — begins with hydraulic power, and that power begins at the pump. The machine's first physical need is a heart that pushes fluid.
 
+**Benchmark task supported:** Precision Positioning (the power source that drives all motion).
+
 ---
 
 ## 1. Why this matters
@@ -220,8 +222,14 @@ The workcell is being upgraded for a faster duty cycle requiring 18 LPM at up to
 
 ## Machine Capability Added
 
+> **Before this lesson the machine could not:** produce any flow — it had no source of hydraulic power.
+>
+> **After this lesson the machine can:** generate controlled hydraulic flow from a specified pump (8 cc/rev gear pump, ~10.7 LPM).
+
 The machine now has a **defined power source**. You can specify the pump that gives the workcell its flow (8 cc/rev gear pump at 1450 RPM → ~10.7 LPM) and explain why its choice caps every downstream capability.
 
+
+**Digital twin contribution:** the pump's displacement and volumetric efficiency are recorded as parameters the twin will use to model the machine's flow source (the pump model arrives in Module 05).
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Valves: direction, pressure, and flow*

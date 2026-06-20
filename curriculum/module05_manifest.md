@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 1 (Hydraulic Power)  
 **Pipeline Stages:** ACTUATE (energy source)
 
+> **Machine mission:** Powering the Smart Agricultural Workcell
+>
+> **Machine Capability Added:** Generate hydraulic power.
+>
+> **Benchmark task advanced:** Precision Positioning
+>
+> **Artifact:** Hydraulic Power Unit Design
+
 ---
 
 ## Module Purpose

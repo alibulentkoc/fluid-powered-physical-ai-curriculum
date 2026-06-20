@@ -9,13 +9,15 @@
 
 The machine transmits all of its power through a fluid. That fluid is not filler — it is the medium that carries force from pump to cylinder, and its compressibility decides whether the machine responds crisply or spongily. The machine needs the right fluid to move at all.
 
+**Benchmark task supported:** Precision Positioning (responsive, reliable motion).
+
 ---
 
 ## 1. Why this matters
 
-It is easy to think of hydraulic fluid as just the stuff that fills the system. It is not. The fluid *is* how power moves from the pump to the cylinder. Its properties decide how efficiently energy transmits, how long the components last, and how the system behaves hot or cold.
+The machine transmits every bit of its power through a fluid. When the controller commands a motion, it is the fluid that carries that command from the pump to the cylinder and turns it into force. If the fluid is wrong — too compressible, poorly chosen — the machine responds spongily, loses precision, or does not move reliably at all. The fluid is not the stuff that fills the gaps around the hydraulics; it *is* the medium through which the machine acts.
 
-In an intelligent system, the fluid matters even more. Its viscosity changes with temperature, which changes the system's response — something the digital twin must account for. Contamination in the fluid is the leading cause of failure. Before you can specify the workcell's fluid (the deliverable for this module), you need to understand what the fluid is actually doing.
+So before the workcell can move dependably, you have to understand what its fluid is actually doing — because it is doing four jobs at once, and the machine's performance depends on all of them. Its compressibility sets how crisply the machine responds (a parameter the digital twin needs); its viscosity shifts with temperature; and its cleanliness determines how long the machine survives.
 
 This module is shorter than the others by design. Its job is precise: give you the fluid knowledge to make informed selections and to model transmission behavior.
 
@@ -182,6 +184,10 @@ A workcell is being tested and the operator notices the cylinder responds sluggi
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** transmit power reliably — its medium was unspecified.
+>
+> **After this lesson the machine can:** be filled with a fluid understood to do all four jobs (transmit, lubricate, seal, cool), with bulk modulus quantified for the twin.
 
 The machine's **power-transmission medium is understood**. You can explain why near-incompressibility makes the workcell responsive, and why trapped air would make it sluggish and unpredictable — the first parameter (bulk modulus) the digital twin will need.
 

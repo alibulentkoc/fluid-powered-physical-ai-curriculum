@@ -9,6 +9,8 @@
 
 The machine will run for years only if its fluid stays clean, cool, and contained. Most hydraulic machines die of contamination, not worn-out muscle. The workcell needs the unglamorous support components that keep everything else alive.
 
+**Benchmark task supported:** All three (keeping the machine alive to perform any task).
+
 ---
 
 ## 1. Why this matters
@@ -214,8 +216,14 @@ With all four lessons complete, produce the first **Component Map** of the Smart
 
 ## Machine Capability Added
 
+> **Before this lesson the machine could not:** survive extended operation — contamination would destroy it.
+>
+> **After this lesson the machine can:** stay clean, cool, and healthy over time through a specified reservoir, filter, and fittings.
+
 The machine can now **stay healthy over time**. You can specify the reservoir, filter, hoses, and fittings that protect the workcell from the contamination that would otherwise destroy its valves and seals — completing the Hardware Architecture.
 
+
+**Digital twin contribution:** the reservoir, filter, and line choices fix the dead volumes and cleanliness assumptions the twin needs; a clogging filter is a future fault the twin will eventually detect as a pressure-drop residual.
 ---
 
 *Lesson 04 — Version 0.1 | Module 02 lesson content complete. Next: Module 02 summary, exercises, and the pump flow code.*

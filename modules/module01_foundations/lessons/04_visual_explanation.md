@@ -9,6 +9,8 @@
 
 The machine is six subsystems acting as one. Before building any of them, you need to see how they connect — how a single command flows from the brain through the valves to the cylinder and back as sensor feedback. The machine needs you to hold its whole architecture in your head.
 
+**Benchmark task supported:** All three (the end-to-end command path every task uses).
+
 ---
 
 ## 1. Why this matters
@@ -321,6 +323,10 @@ This is the source of truth for everything the workcell will become. Every modul
 
 
 ## Machine Capability Added
+
+> **Before this lesson the machine could not:** be traced as a connected whole; the subsystems were separate ideas.
+>
+> **After this lesson the machine can:** have a single command followed end-to-end through all six subsystems and back as sensor feedback.
 
 The machine can now be **traced end-to-end**. You can follow a command through all six subsystems and explain how each contributes — the mental map that every subsequent module fills in with real detail.
 
