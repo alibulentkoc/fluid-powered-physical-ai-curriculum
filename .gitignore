@@ -4,6 +4,7 @@
 # Generated docs/ content (assembled by build_site.sh from authoring sources)
 /docs/modules/
 /docs/curriculum_pages/
+/docs/CURRICULUM_OVERVIEW.md
 /docs/assets/
 
 # Python cruft

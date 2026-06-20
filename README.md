@@ -1,135 +1,65 @@
 # Fluid-Powered Physical AI Curriculum
 
-**An open curriculum in Fluid Power, Hydraulics, Electro-Hydraulic Systems, Sensors, Embedded Intelligence, Agricultural Robotics, and Digital Twins.**
+**An open curriculum in fluid power, hydraulics, electro-hydraulic systems, sensors, embedded intelligence, agricultural robotics, and digital twins — built around one running machine.**
+
+Physical AI is usually taught on electric motors. Agriculture, construction, and heavy industry run on **fluid power**. This curriculum brings intelligence into fluid-powered machinery — taking you from first principles to a working, validated digital twin of an intelligent electro-hydraulic system.
+
+You don't take twelve modules. You build **one machine in twelve stages**: the **Intelligent Fluid-Powered Agricultural Manipulation Cell**. The machine is the story; the modules are its chapters.
+
+**Status: complete.** All 12 modules built and verified — 49 lessons, 39 tested code files, 12 labs, capstone demonstrated against all performance specifications. See the [Final Completion Report](curriculum/FINAL_COMPLETION_REPORT.md).
 
 ---
 
-## What This Is
+## Quick start
 
-Physical AI has largely been built on electrically actuated systems. Most open curricula in robotics, embedded intelligence, and machine learning assume servo motors, stepper drives, or brushless DC actuators. That assumption excludes a significant portion of the real world.
+1. **Read the overview** — [`CURRICULUM_OVERVIEW.md`](CURRICULUM_OVERVIEW.md) is the authoritative overview: what the curriculum is, the twelve stages, the benchmark tasks, and the educational philosophy.
+2. **Meet the machine** — [`docs/MACHINE_STORY.md`](docs/MACHINE_STORY.md), the [`docs/BENCHMARK_TASKS.md`](docs/BENCHMARK_TASKS.md), and the [`docs/MODULE_ARTIFACT_MAP.md`](docs/MODULE_ARTIFACT_MAP.md).
+3. **Start learning** — begin with Module 01: [`modules/module01_foundations/lessons/01_why_this_matters.md`](modules/module01_foundations/lessons/01_why_this_matters.md), then follow the modules in order.
+4. **Run the code** — tested Python models live in [`code/`](code/); hands-on labs in [`labs/`](labs/).
 
-Agriculture, construction, forestry, and heavy industry still depend overwhelmingly on fluid power. Hydraulic systems move the vast majority of the world's working machinery. And yet almost no open educational material exists that asks: *what does it look like to bring intelligence into these systems?*
-
-This curriculum answers that question.
-
-**Fluid-Powered Physical AI** is a modular, open-source curriculum that takes learners from first principles in fluid mechanics to a working digital twin of an intelligent electro-hydraulic robotic system. The thread connecting every module is a single running platform:
-
-> **The Intelligent Fluid-Powered Agricultural Manipulation Cell**
-
-This is not a crop-specific machine. It is a constrained-workspace manipulation platform actuated by fluid power, instrumented with real sensors, controlled by embedded processors, and mirrored by a software digital twin. Agriculture is the demonstration domain. The platform is general enough to support research, education, and extension into adjacent fields.
+> **Browse the site:** the full curriculum is published as a navigable site at
+> **https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/**
 
 ---
 
-## Who This Is For
+## Key documents
 
-- Engineering students with some background in mechanics or electronics who want to understand fluid-powered systems
-- Practitioners in agricultural, industrial, or construction equipment who want to add sensing and embedded control
-- Researchers exploring intelligent actuation beyond electric motors
-- Educators building fluid power or mechatronics courses
-- Makers and hobbyists curious about hydraulic robotics
+| Document | Purpose |
+|----------|---------|
+| [`CURRICULUM_OVERVIEW.md`](CURRICULUM_OVERVIEW.md) | **Authoritative curriculum overview** — what it is, the twelve stages, philosophy, benchmark tasks |
+| [`curriculum/CURRICULUM_ENGINEERING_METHODOLOGY.md`](curriculum/CURRICULUM_ENGINEERING_METHODOLOGY.md) | Governance & curriculum-engineering methodology (how the curriculum is designed, produced, verified, and maintained) |
+| [`curriculum/FINAL_COMPLETION_REPORT.md`](curriculum/FINAL_COMPLETION_REPORT.md) | Completion record: conformance, artifact handoffs, deviations, publication readiness |
 
----
-
-## What You Will Build
-
-> **New here? Start with the machine.**
-> - [`docs/MACHINE_STORY.md`](docs/MACHINE_STORY.md) — what the machine is, what it does, and what makes it intelligent
-> - [`docs/BENCHMARK_TASKS.md`](docs/BENCHMARK_TASKS.md) — the three tasks the machine must perform
-> - [`docs/MODULE_ARTIFACT_MAP.md`](docs/MODULE_ARTIFACT_MAP.md) — the tangible artifact each module produces
-> - [`curriculum/CURRICULUM_NARRATIVE.md`](curriculum/CURRICULUM_NARRATIVE.md) — how the machine becomes more capable, stage by stage
->
-> You are not taking twelve modules. You are building one machine in twelve stages. The machine is the story; the modules are chapters.
-
-By the end of this curriculum, you will understand, simulate, and physically prototype key elements of an intelligent electro-hydraulic manipulation system. The capstone integrates:
-
-- A hydraulic positioning structure (cylinder or motor driven)
-- Interchangeable end effectors for manipulation tasks
-- Pressure, position, and flow sensing
-- Embedded control using Arduino and Raspberry Pi
-- Vision-based feedback where applicable
-- A digital twin implemented in Python and/or simulation software
+> The methodology and completion report are **governance and curriculum-engineering artifacts**, not student-facing material. They are intentionally kept out of the student site navigation.
 
 ---
 
-## Course Structure
-
-| Module | Title | Status |
-|--------|-------|--------|
-| 01 | Foundations of Fluid Power and Physical AI | 🟡 In Progress |
-| 02 | Hydraulic Components and System Architecture | 🔲 Planned |
-| 03 | Hydraulic Fluids and Energy Transmission | 🔲 Planned |
-| 04 | Fluid Mechanics for Intelligent Machines | 🔲 Planned |
-| 05 | Hydraulic Pumps and Power Generation | 🔲 Planned |
-| 06 | Valves and Motion Control | 🔲 Planned |
-| 07 | Hydraulic Cylinders and Motors | 🔲 Planned |
-| 08 | Hydraulic Circuit Design and Integration | 🔲 Planned |
-| 09 | Sensors and Instrumentation | 🔲 Planned |
-| 10 | Electro-Hydraulic Systems and Embedded Control | 🔲 Planned |
-| 11 | Digital Twins for Fluid-Powered Systems | 🔲 Planned |
-| 12 | Fluid-Powered Physical AI Capstone | 🔲 Planned |
-
----
-
-## Repository Layout
+## Repository layout
 
 ```
 fluid-powered-physical-ai-curriculum/
-├── README.md                  # This file
+├── README.md                  # This landing page
+├── CURRICULUM_OVERVIEW.md     # Authoritative curriculum overview
 ├── CONTRIBUTING.md            # How to contribute
 ├── LICENSE                    # MIT License
-├── TODO.md                    # Active task list
-├── PROJECT_BOOTSTRAP.md       # How to get started
-├── PROJECT_STATE.md           # Current state snapshot
-├── master_progress.md         # Detailed progress tracker
-├── ARCHITECT_DECISIONS.md     # Key design decisions and rationale
 │
-├── docs/                      # Course overview, philosophy, roadmap
-├── curriculum/                # Module manifests and learning objectives
-├── modules/                   # Teaching content, lesson files
-├── labs/                      # Hands-on lab procedures and data sheets
-├── assets/                    # Figures, diagrams, images
-│   ├── figures/
-│   └── diagrams/
-├── code/                      # Code examples, simulations, stubs
-├── coaches/                   # AI tutor prompts, instructor notes
-└── projects/
-    └── capstone/              # Capstone project: the Manipulation Cell
+├── docs/                      # Machine story, benchmark tasks, artifact map
+├── curriculum/                # Manifests, narrative, methodology, completion report
+├── modules/                   # Lessons, summaries, exercises (per module)
+├── labs/                      # Hands-on lab procedures
+├── code/                      # Tested Python models and simulations
+├── assets/                    # Figures (SVG) and storyboards
+└── projects/capstone/         # The capstone demonstration
 ```
 
 ---
 
-## Educational Philosophy
+## Contributing & license
 
-Each topic follows a five-stage progression:
-
-1. **Physical intuition** — build a mental model before any equations
-2. **Visual understanding** — diagrams, schematics, and annotated figures
-3. **Mathematical formulation** — governing equations with clear derivation
-4. **Computational implementation** — simulate, plot, or control in code
-5. **System integration** — connect the concept to the running capstone platform
-
----
-
-## Getting Started
-
-See [`PROJECT_BOOTSTRAP.md`](PROJECT_BOOTSTRAP.md) for environment setup and first steps.
-
-Start with [`curriculum/module01_manifest.md`](curriculum/module01_manifest.md) for the Module 1 learning plan.
-
----
-
-## Contributing
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md). Contributions of lessons, labs, diagrams, and code are welcome. Please follow the module design standard described there.
-
----
-
-## License
+Contributions of lessons, labs, diagrams, and code are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md) and follow the standards in the [curriculum engineering methodology](curriculum/CURRICULUM_ENGINEERING_METHODOLOGY.md).
 
 MIT License. See [`LICENSE`](LICENSE).
 
 ---
 
-## Acknowledgments
-
-This curriculum is inspired in spirit and structure by the Physical AI Curriculum project. It is independently developed and focused on the largely underserved domain of fluid-powered intelligent systems.
+*Independently developed, focused on the underserved domain of fluid-powered intelligent systems. For the full overview, see [`CURRICULUM_OVERVIEW.md`](CURRICULUM_OVERVIEW.md).*

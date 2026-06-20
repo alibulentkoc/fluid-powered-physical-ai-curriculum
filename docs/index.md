@@ -10,6 +10,7 @@ Every topic is taught in five layers: **physical intuition → visual understand
 
 You are not taking twelve separate modules. You are building **one machine** — the Smart Agricultural Workcell — in twelve stages. The machine is the story; the modules are its chapters. Across the curriculum it gains the ability to generate power, control motion, produce force, sense its own state, decide and act, and watch over itself with a digital twin.
 
+- [**Curriculum overview**](CURRICULUM_OVERVIEW.md) — the authoritative overview: what it is, the twelve stages, philosophy, and benchmark tasks
 - [The machine's story](MACHINE_STORY.md) — what the machine is, what it does, and what makes it intelligent
 - [Benchmark tasks](BENCHMARK_TASKS.md) — the three tasks the machine must perform
 - [Module → artifact map](MODULE_ARTIFACT_MAP.md) — the tangible artifact each module produces
