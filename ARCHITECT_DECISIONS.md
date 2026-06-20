@@ -119,3 +119,22 @@ A log of significant design choices made during curriculum development. Each ent
 - Higher-pressure hydraulic work should be introduced gradually in Modules 05–08 with appropriate safety scaffolding
 
 **Safety note:** All lab files must include explicit pressure ratings and safety warnings.
+
+---
+
+## AD-009 — Narrative-driven development (Directive 004)
+
+**Decision:** The machine, not the hydraulics, is the protagonist of the curriculum. Every module must contribute a visible capability to the Smart Agricultural Workcell and answer four questions: (1) what capability did the machine gain, (2) which benchmark task improved, (3) what was added to the digital twin, (4) how does it connect to the next module.
+
+**Implementation:**
+- Created `curriculum/CURRICULUM_NARRATIVE.md` as a first-class artifact: machine mission, three benchmark tasks (Precision Positioning, Force-Controlled Interaction, Intelligent Manipulation), module-by-module machine evolution, and digital twin growth.
+- Every module `summary.md` now carries a **Machine Capability Added** and **Digital Twin Contribution** section.
+- Every delivered manifest header carries a mission-framing block.
+- README points new students to the narrative first.
+
+**Rationale:** Guards against curriculum drift — the risk that the course becomes "a hydraulics textbook with a capstone attached." The Physical AI curriculum succeeds because students continuously see a robot becoming more capable; this curriculum achieves the same effect with a fluid-powered intelligent machine.
+
+**Three benchmark tasks (recurring throughout):**
+1. Precision Positioning (heavy in Modules 04–08)
+2. Force-Controlled Interaction (heavy in Modules 06–10)
+3. Intelligent Manipulation (heavy in Modules 09–12)

@@ -71,6 +71,23 @@ Before moving to Module 03, confirm you can:
 
 ---
 
+## Machine Capability Added
+
+> **Identify and select the physical components the machine is made of.**
+
+The machine's six subsystems now have real, named hardware. You can look at a workcell — physical or schematic — and identify every component and explain why it is there. The deliverable, the Component Map, is the machine drawn with its actual parts.
+
+**Benchmark task advanced:** Precision Positioning and Force-Controlled Interaction both become physically concrete — you now know which components produce the motion and the force each task needs.
+
+## Digital Twin Contribution
+
+The twin gains its first **parameters**: pump displacement, cylinder bore and rod areas, valve type and port configuration, filter rating. These are the raw numbers the twin's models will use once they are written in Module 04.
+
+**New prediction enabled:** none yet (the models that use these parameters arrive in Module 04).
+**Connects to next module:** Module 03 specifies the fluid that fills these components and gives the twin its physical fluid parameters.
+
+---
+
 ## What comes next
 
 Module 03 — Hydraulic Fluids and Energy Transmission — specifies the fluid that fills the system you just mapped. You will learn how viscosity, temperature, and contamination affect performance, and you will make the fluid specification for the workcell.

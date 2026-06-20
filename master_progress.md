@@ -92,7 +92,7 @@ Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
 |--------|--------|
 | 02 | ✅ COMPLETE (lessons, summary, code, exercises, lab) |
 | 03 | ✅ COMPLETE (lessons, summary, code×4, exercises, lab) |
-| 04 | 🔲 |
+| 04 | ✅ COMPLETE (5 lessons, summary, code×3, exercises, lab, twin born) |
 | 05 | 🔲 |
 | 06 | 🔲 |
 | 07 | 🔲 |

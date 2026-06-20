@@ -80,6 +80,23 @@ If you can do all nine, you are ready for Module 02.
 
 ---
 
+## Machine Capability Added
+
+> **Understand the system.**
+
+After this module the machine exists as a complete, understood concept. You can name its six subsystems, trace a command through all of them, and compute its core performance numbers from first principles. You cannot yet build it — but you can see the whole machine and explain how it works.
+
+**Benchmark task advanced:** All three at the conceptual level — you understand what positioning, force interaction, and intelligent manipulation will require.
+
+## Digital Twin Contribution
+
+The *idea* of the twin is introduced (Subsystem 6): a software model that runs alongside the machine and validates it. No model code yet — but the three governing equations (Pascal, continuity, power) are the first relationships the twin will eventually compute.
+
+**New prediction enabled:** none yet (conceptual module).
+**Connects to next module:** Module 02 turns these abstract subsystems into the real components the twin will parameterize.
+
+---
+
 ## What comes next
 
 Module 02 — Hydraulic Components and System Architecture — turns the abstract subsystems into real hardware. You will learn to identify pumps, valves, cylinders, and fittings by name and function, read ISO 1219 schematic symbols, and produce the first component map of your workcell.

@@ -5,6 +5,12 @@
 **Estimated Duration:** 2–3 weeks (self-paced) | 4–5 class sessions (instructor-led)  
 **Status:** 🟡 Manifest complete. Lesson content in progress.
 
+> **Machine mission for this module:** Understanding the Machine
+>
+> **Machine Capability Added:** Understand the system.
+>
+> **Benchmark task advanced:** All three (conceptual level)
+
 ---
 
 ## Module Purpose

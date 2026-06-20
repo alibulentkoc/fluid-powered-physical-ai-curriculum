@@ -6,6 +6,12 @@
 **Capstone Subsystems:** 1 (Hydraulic Power), 2 (Fluid Transport)  
 **Pipeline Stages:** ACTUATE
 
+> **Machine mission for this module:** Building the Physical Architecture of the Smart Agricultural Workcell
+>
+> **Machine Capability Added:** Identify and select the machine's physical components.
+>
+> **Benchmark task advanced:** Precision Positioning, Force-Controlled Interaction
+
 ---
 
 ## Module Purpose

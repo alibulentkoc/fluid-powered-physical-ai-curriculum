@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: Modules 01-03 complete
+Last updated: Modules 01-04 complete + Directive 004 (narrative-driven) applied
 
 ---
 
@@ -94,6 +94,28 @@ arithmetic error in a draft was caught and corrected this way).
 
 ---
 
+## Module 04 — COMPLETE
+
+| File | Status |
+|------|--------|
+| 5 lessons (Bernoulli, orifice, force balance, pressure dynamics, simulation) | ✅ |
+| summary.md (+ Machine Capability + Digital Twin Contribution) | ✅ |
+| exercises/problem_set_04.md, knowledge_check_04.md | ✅ |
+| labs/lab04_step_response/procedure.md | ✅ |
+| code: orifice_flow.py, cylinder_dynamics.py, cylinder_simulation.py | ✅ tested |
+
+The digital twin is born: valve model + coupled cylinder ODE. Simulation
+produces sensible extend-then-hold (~82 mm/s steady, matches hand calc).
+
+## Directive 004 — Narrative-driven development APPLIED
+
+- curriculum/CURRICULUM_NARRATIVE.md created (first-class artifact)
+- Machine Capability Added + Digital Twin Contribution sections in all summaries
+- Mission framing in all delivered manifests
+- README points to narrative; AD-009 logged
+
+---
+
 ## Central artifacts and manifests
 
 | Item | Status |
@@ -120,5 +142,6 @@ arithmetic error in a draft was caught and corrected this way).
 
 ## Next action
 
-Module 04 — Fluid Mechanics for Intelligent Machines (the math core: cylinder ODE,
-first digital twin component).
+Module 05 — Hydraulic Pumps and Power Generation. Per Directive 004, lead with the
+machine mission (the machine must generate power), add the pump twin component, and
+include Machine Capability Added + Digital Twin Contribution sections.

@@ -6,6 +6,12 @@
 **Capstone Subsystems:** 2 (Fluid Transport)  
 **Pipeline Stages:** ACTUATE (transmission), VALIDATE (fluid condition monitoring)
 
+> **Machine mission for this module:** Giving the Machine a Working Fluid
+>
+> **Machine Capability Added:** Specify and maintain the working fluid.
+>
+> **Benchmark task advanced:** Precision Positioning
+
 ---
 
 ## Module Purpose

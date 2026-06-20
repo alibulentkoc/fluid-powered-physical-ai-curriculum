@@ -85,6 +85,23 @@ Before Module 04, confirm you can:
 
 ---
 
+## Machine Capability Added
+
+> **Specify and maintain the working fluid that carries the machine's power.**
+
+The machine can now be correctly filled and kept healthy. You produce the Fluid Specification — grade, cleanliness, filtration, line sizing — with every choice justified by the workcell's operating environment. Without this, no amount of good hardware produces reliable motion.
+
+**Benchmark task advanced:** Precision Positioning — clean, correct-viscosity, air-free fluid is precisely what makes accurate, repeatable motion possible. Spongy or contaminated fluid destroys positioning precision.
+
+## Digital Twin Contribution
+
+The twin gains its first **physical parameters**, all verified against tested code: effective bulk modulus (system stiffness), viscosity-vs-temperature (the Walther model), density, and line pressure loss (Darcy-Weisbach). These are the constants the cylinder ODE needs.
+
+**New prediction enabled:** the twin can now predict fluid compression, line pressure drop, and how viscosity shifts with temperature.
+**Connects to next module:** Module 04 uses bulk modulus and these fluid parameters to build the cylinder ODE — the twin's first dynamic model.
+
+---
+
 ## What comes next
 
 Module 04 — Fluid Mechanics for Intelligent Machines — is the mathematical core of the curriculum's first half. It combines the fluid properties from this module with the components from Module 02 to build the first dynamic simulation of the workcell: the cylinder ODE that becomes the heart of the digital twin.

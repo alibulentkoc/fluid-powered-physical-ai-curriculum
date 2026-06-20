@@ -6,6 +6,12 @@
 **Capstone Subsystems:** 2 (Fluid Transport), 4 (Actuation), 6 (Digital Twin)  
 **Pipeline Stages:** ACTUATE, VALIDATE
 
+> **Machine mission for this module:** Teaching the Machine to Predict Its Own Behavior
+>
+> **Machine Capability Added:** Predict hydraulic behavior before building.
+>
+> **Benchmark task advanced:** Precision Positioning
+
 ---
 
 ## Module Purpose
