@@ -59,8 +59,8 @@ Ordered by the directive's priority sequence:
 - [x] modules/module02_components/lessons/04_support_system.md
 - [x] modules/module02_components/summary.md
 - [x] code/module02/pump_flow_model.py
-- [ ] modules/module02_components/exercises/ (problem set + knowledge check)
-- [ ] labs/lab02_component_identification/procedure.md
+- [x] modules/module02_components/exercises/ (problem set + knowledge check)
+- [x] labs/lab02_component_identification/procedure.md
 
 ### 5. Coaches
 - [ ] coaches/module01_tutor_prompt.md
@@ -74,9 +74,12 @@ Ordered by the directive's priority sequence:
 
 ---
 
-## 🟡 Deferred — Module Content (03–12)
+## 🟢 Module 03 — COMPLETE
+Lessons, summary, 4 tested code files, exercises, Lab 03.
 
-All manifests exist. Lesson content deferred until Module 01 is proven.
+## 🟡 Deferred — Module Content (04–12)
+
+All manifests exist. Module 04 is next (the mathematical core: cylinder ODE).
 
 ---
 

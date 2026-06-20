@@ -90,8 +90,8 @@ Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
 ## Modules 02–12 — Lesson Content
 | Module | Status |
 |--------|--------|
-| 02 | ✅ lessons + summary + code (exercises/lab pending) |
-| 03 | 🔲 |
+| 02 | ✅ COMPLETE (lessons, summary, code, exercises, lab) |
+| 03 | ✅ COMPLETE (lessons, summary, code×4, exercises, lab) |
 | 04 | 🔲 |
 | 05 | 🔲 |
 | 06 | 🔲 |

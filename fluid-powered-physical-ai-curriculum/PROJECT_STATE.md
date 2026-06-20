@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: Module 01 finalized + Module 02 lessons complete
+Last updated: Modules 01-03 complete
 
 ---
 
@@ -67,7 +67,30 @@ the baseline workcell numbers (19.63 kN extend, 84.9 mm/s, 1.67 kW) consistently
 | modules/module02_components/summary.md | ✅ |
 | code/module02/pump_flow_model.py | ✅ tested |
 
-Module 02 remnants: exercises (problem set, knowledge check), Lab 02 procedure.
+Module 02: COMPLETE — lessons, summary, code, exercises (problem set + knowledge check), Lab 02 procedure.
+
+---
+
+## Module 03 — COMPLETE
+
+| File | Status |
+|------|--------|
+| curriculum/module03_manifest.md | ✅ |
+| modules/module03_fluids/lessons/01_what_fluid_does.md | ✅ |
+| modules/module03_fluids/lessons/02_viscosity.md | ✅ |
+| modules/module03_fluids/lessons/03_contamination.md | ✅ |
+| modules/module03_fluids/lessons/04_energy_losses.md | ✅ |
+| modules/module03_fluids/summary.md | ✅ |
+| modules/module03_fluids/exercises/problem_set_03.md | ✅ |
+| modules/module03_fluids/exercises/knowledge_check_03.md | ✅ |
+| labs/lab03_viscosity/procedure.md | ✅ |
+| code/module03/bulk_modulus_demo.py | ✅ tested |
+| code/module03/viscosity_model.py | ✅ tested |
+| code/module03/cleanliness_calculator.py | ✅ tested |
+| code/module03/pipe_friction.py | ✅ tested |
+
+All numerical claims verified against running code (one bulk-modulus
+arithmetic error in a draft was caught and corrected this way).
 
 ---
 
@@ -97,4 +120,5 @@ Module 02 remnants: exercises (problem set, knowledge check), Lab 02 procedure.
 
 ## Next action
 
-Module 02 remnants (exercises + Lab 02 procedure), then Module 03 lesson content.
+Module 04 — Fluid Mechanics for Intelligent Machines (the math core: cylinder ODE,
+first digital twin component).
