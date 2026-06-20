@@ -66,7 +66,9 @@ This leaves a simple 2-state system $[x, v]$ that is non-stiff and integrates ro
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg`
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.*
 
 The simulation realizes the entire twin-side of the digital twin workflow figure: the valve orifice model feeds the cylinder ODE, which outputs position, velocity, and pressure over time. Running the simulation *is* running the twin.
 
@@ -114,6 +116,13 @@ For the workcell, the simulation confirms the design intent from Modules 01–03
 
 ## 7. Interactive demonstration
 
+
+**▶ Interactive demo — Cylinder ODE Stepper**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module04/cylinder_ode_stepper.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
+
 ```python
 # Requires scipy. From the code/module04 directory:
 from cylinder_simulation import simulate_quasistatic, summarize
@@ -148,6 +157,13 @@ Reflect in a comment: why does the quasi-static model integrate so much more eas
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module04/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. What does a numerical ODE solver actually do, step by step?
 2. Why must the force balance and pressure dynamics be solved together rather than separately?
@@ -213,3 +229,40 @@ The machine has a **working digital twin of its cylinder**. `cylinder_simulation
 ---
 
 *Lesson 05 — Version 0.1 | Module 04 lesson content complete. This is the mathematical and computational core of the curriculum's first half — the digital twin is now alive.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 04 (Fluid Mechanics) of the Fluid-Powered Physical AI curriculum: "Simulation: the first ODE in Python". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Simulation: the first ODE in Python", Module 04 — Fluid Mechanics) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Simulation: the first ODE in Python") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Simulation: the first ODE in Python", Module 04 — Fluid Mechanics) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

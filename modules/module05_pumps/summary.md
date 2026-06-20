@@ -66,7 +66,7 @@ The **Hydraulic Power Unit Design** — the complete, justified specification of
 ## Lessons in this module
 
 1. `01_why_machine_needs_power.md` — the machine needs a source of flow (the pump)
-2. `02_which_pump.md` — selecting the gear pump by matching mission
+2. `02_which_pump.md` — choosing the power source by evaluating requirements
 3. `03_performance_efficiency.md` — how much power the machine really delivers
 4. `04_designing_hpu.md` — integrating the Hydraulic Power Unit (the artifact)
 

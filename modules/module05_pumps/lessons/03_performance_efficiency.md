@@ -66,7 +66,9 @@ The machine's motor must provide $P_{shaft}$, not $P_{hyd}$. The difference is t
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (the pump model block)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (the pump model block)
 
 Picture the machine's power as a flow that narrows at each loss. The motor supplies 100% at the shaft. Mechanical losses (friction) skim off ~10%. Volumetric losses (leakage) skim off another ~8%. What remains — about 83% — is the hydraulic power that actually moves the machine. A Sankey-style diagram shows the motor's power entering wide and the delivered power leaving narrower, with two loss streams branching off as heat. This picture is why the motor is bigger than the hydraulic output suggests.
 
@@ -199,3 +201,40 @@ The machine now has an **honest power budget**. You can compute the hydraulic po
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — Designing the workcell's hydraulic power unit*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 05 (Pumps) of the Fluid-Powered Physical AI curriculum: "How much power the machine actually delivers". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("How much power the machine actually delivers", Module 05 — Pumps) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("How much power the machine actually delivers") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("How much power the machine actually delivers", Module 05 — Pumps) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

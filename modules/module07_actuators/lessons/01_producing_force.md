@@ -64,7 +64,9 @@ $$A_{min} = \frac{k \cdot F_{req}}{P} \Rightarrow D_{min} = \sqrt{\frac{4 A_{min
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 4 — Actuation)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 4 — Actuation)
 
 Picture the piston as the machine's force-transfer surface. Pressure pushes on the full bore area to extend (large force), and on the smaller annular rod-side area to retract (smaller force). A force-vs-pressure plot is a straight line through the origin — double the pressure, double the force — with the extend line steeper than the retract line because of the larger bore area. Overlay the task force requirements as horizontal lines, and the operating pressure needed for each task is where they cross. The huge gap between the machine's capacity (19.63 kN) and its task needs (hundreds of newtons) is the visible margin that makes controlled force achievable.
 
@@ -96,6 +98,13 @@ The machine applies its 1.5 kN gripping force at just 7.6 bar — less than 8% o
 ---
 
 ## 7. Interactive demonstration
+
+
+**▶ Interactive demo — Actuator Force & Speed Explorer**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module07/actuator_force_speed.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
 
 ```python
 import math
@@ -138,6 +147,13 @@ This is the force layer of the machine's actuator model, feeding the digital twi
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module07/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. What is the machine's core force relationship, and what reduces the *usable* force below it?
 2. Why is the machine's extend force larger than its retract force?
@@ -196,3 +212,40 @@ The machine now has a **correctly-sized force capacity**. You can compute the fo
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Specifying the machine's actuator (selection, buckling, mounting)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 07 (Actuators) of the Fluid-Powered Physical AI curriculum: "The machine needs to produce force". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine needs to produce force", Module 07 — Actuators) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine needs to produce force") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine needs to produce force", Module 07 — Actuators) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

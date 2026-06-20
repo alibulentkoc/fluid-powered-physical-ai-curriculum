@@ -64,7 +64,9 @@ which sets the spool position. The machine chooses the PWM frequency high enough
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (the COMMAND stage — where the brain meets the hydraulics)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (the COMMAND stage — where the brain meets the hydraulics)
 
 Picture the machine's command path as a chain from decision to motion: the controller decides "extend," sets a digital output high, the MOSFET driver switches the solenoid current, the solenoid shifts the spool, and fluid flows to the cylinder. For the proportional valve, the chain carries a *level*, not just a switch: the controller sets a PWM duty cycle, which becomes an average current, which sets a spool position, which meters a proportional flow. The figure shows the COMMAND stage of the pipeline — the exact point where the machine's intelligence reaches into its hydraulics and makes them move. This is the boundary the whole curriculum has been building toward.
 
@@ -209,3 +211,40 @@ The deliverable of this module is the **Motion Control Architecture** for the Sm
 ---
 
 *Lesson 04 — Version 0.1 | Module 06 lesson content complete. Next: Module 06 summary, exercises, code, and Lab 06.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 06 (Valves) of the Fluid-Powered Physical AI curriculum: "The machine takes commands from its brain". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine takes commands from its brain", Module 06 — Valves) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine takes commands from its brain") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine takes commands from its brain", Module 06 — Valves) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

@@ -74,7 +74,9 @@ This ratio appears in force (extend is 1.46× retract) and speed (retract is 1.4
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 4, cylinder detail)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 4, cylinder detail)
 
 Picture the cylinder specification as a labeled drawing: bore and rod diameters as concentric circles, stroke as the travel length, the mounting as the interface to the frame, and the rod under compressive load as a column that must not buckle. A buckling chart — critical load vs. effective length — shows the workcell's operating point sitting far below the buckling curve, in the safe region, with the margin visible as the vertical gap. For a much longer stroke, the operating point would slide right along the curve toward the danger zone, showing why long-stroke cylinders need fatter rods.
 
@@ -215,3 +217,40 @@ The machine now has a **complete, buildable actuator specification** — the Act
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — The machine's real actuator behavior (friction, cushioning, and the twin)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 07 (Actuators) of the Fluid-Powered Physical AI curriculum: "Specifying the machine's actuator". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Specifying the machine's actuator", Module 07 — Actuators) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Specifying the machine's actuator") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Specifying the machine's actuator", Module 07 — Actuators) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

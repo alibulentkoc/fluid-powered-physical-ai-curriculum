@@ -65,7 +65,9 @@ where $\beta_{thermal}$ is the fluid's thermal expansion coefficient (~0.0007/°
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (circuit protection layer)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (circuit protection layer)
 
 Picture the protection components placed on the circuit like guards at each vulnerable point: pilot-operated check valves at the cylinder ports (holding the load), port relief valves bridging the cylinder ports to tank (capping spikes), the system relief at the pump (capping supply pressure), a counterbalance valve in the line to an overhauling load, and thermal relief on any section that can be blocked with trapped fluid. A fault-tree view shows each fault — power loss, spike, runaway, overheat — flowing down to a safe outcome via its guarding component. The machine's safety is visible as this layer of protection over the working circuit.
 
@@ -200,3 +202,40 @@ The machine now has **fail-safe circuit protection** — the precondition for tr
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — The machine's complete energy budget and full-task simulation*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 08 (Circuit) of the Fluid-Powered Physical AI curriculum: "The machine fails safely". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine fails safely", Module 08 — Circuit) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine fails safely") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine fails safely", Module 08 — Circuit) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

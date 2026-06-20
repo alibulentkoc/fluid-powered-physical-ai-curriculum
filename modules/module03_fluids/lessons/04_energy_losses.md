@@ -82,7 +82,9 @@ For turbulent flow in smooth pipes, an approximation is $f \approx 0.316 \cdot R
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 2 — supply line)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 2 — supply line)
 
 Imagine the pressure as a quantity that drops steadily along the supply line from pump to cylinder. The steeper the drop, the more energy is lost to friction (and turned into heat). A wide, short, smooth line gives a gentle drop; a narrow, long, fitting-laden line gives a steep one.
 
@@ -236,3 +238,40 @@ The machine's **fluid path can now be sized**. You can compute line losses and c
 ---
 
 *Lesson 04 — Version 0.1 | Module 03 lesson content complete. Next: Module 03 summary, exercises, code, and Lab 03.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 03 (Fluids) of the Fluid-Powered Physical AI curriculum: "Energy losses in fluid transmission". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Energy losses in fluid transmission", Module 03 — Fluids) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Energy losses in fluid transmission") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Energy losses in fluid transmission", Module 03 — Fluids) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

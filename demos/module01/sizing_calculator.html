@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hydraulic Sizing Calculator — Module 01</title>
+<style>
+/* inlined shared styles for standalone use */
+:root{--fp-blue:#185FA5;--fp-blue-dark:#0d3d6e;--fp-green:#2e9e5b;--fp-red:#d4504e;--fp-bg:#fff;--fp-panel:#f6f8fa;--fp-border:#d9e1e8;--fp-text:#1a2733;--fp-muted:#5a6b7b}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--fp-text);background:var(--fp-bg);margin:0;padding:24px;line-height:1.55}
+.fp-wrap{max-width:820px;margin:0 auto}
+.fp-header{border-bottom:3px solid var(--fp-blue);padding-bottom:12px;margin-bottom:20px}
+.fp-header h1{font-size:1.45rem;margin:0 0 4px;color:var(--fp-blue-dark)}
+.fp-header .fp-sub{color:var(--fp-muted);font-size:.92rem}
+.fp-panel{background:var(--fp-panel);border:1px solid var(--fp-border);border-radius:10px;padding:20px;margin-bottom:18px}
+.fp-control{margin-bottom:16px}
+.fp-control label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.fp-control .fp-val{color:var(--fp-blue);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--fp-blue)}
+.fp-out{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:8px}
+.fp-metric{background:#fff;border:1px solid var(--fp-border);border-radius:8px;padding:12px 14px;text-align:center}
+.fp-metric .fp-num{font-size:1.5rem;font-weight:700;color:var(--fp-blue)}
+.fp-metric .fp-label{font-size:.8rem;color:var(--fp-muted);margin-top:2px}
+.fp-note{font-size:.85rem;color:var(--fp-muted);margin-top:10px}
+h2{font-size:1.05rem;color:var(--fp-blue-dark);margin:0 0 14px}
+code{background:#eef2f5;padding:1px 5px;border-radius:4px;font-size:.88em}
+</style>
+</head>
+<body>
+<div class="fp-wrap">
+  <div class="fp-header">
+    <h1>Hydraulic Sizing Calculator</h1>
+    <div class="fp-sub">Module 01 · Lesson 03 — Pascal's Law, continuity, and hydraulic power, live</div>
+  </div>
+
+  <div class="fp-panel">
+    <h2>Set the operating point</h2>
+    <div class="fp-control">
+      <label>System pressure: <span class="fp-val" id="pVal">100</span> bar</label>
+      <input type="range" id="p" min="10" max="250" value="100" step="5">
+    </div>
+    <div class="fp-control">
+      <label>Cylinder bore diameter: <span class="fp-val" id="dVal">50</span> mm</label>
+      <input type="range" id="d" min="10" max="100" value="50" step="1">
+    </div>
+    <div class="fp-control">
+      <label>Pump flow rate: <span class="fp-val" id="qVal">10</span> LPM</label>
+      <input type="range" id="q" min="1" max="40" value="10" step="0.5">
+    </div>
+  </div>
+
+  <div class="fp-panel">
+    <h2>The machine's numbers</h2>
+    <div class="fp-out">
+      <div class="fp-metric"><div class="fp-num" id="area">—</div><div class="fp-label">bore area (mm²)</div></div>
+      <div class="fp-metric"><div class="fp-num" id="force">—</div><div class="fp-label">extend force (kN)</div></div>
+      <div class="fp-metric"><div class="fp-num" id="vel">—</div><div class="fp-label">extend velocity (mm/s)</div></div>
+      <div class="fp-metric"><div class="fp-num" id="hyd">—</div><div class="fp-label">hydraulic power (kW)</div></div>
+      <div class="fp-metric"><div class="fp-num" id="motor">—</div><div class="fp-label">motor power (kW, η=0.85)</div></div>
+    </div>
+    <div class="fp-note">
+      Pascal's Law: <code>F = P × A × 0.1</code> &nbsp;·&nbsp;
+      Continuity: <code>v = Q×16667 / A</code> &nbsp;·&nbsp;
+      Power: <code>P = p×Q / 600</code>. Baseline workcell (100 bar, 50 mm, 10 LPM) →
+      ~19.6 kN, ~85 mm/s, ~2 kW motor.
+    </div>
+  </div>
+</div>
+
+<script>
+function recompute(){
+  const P = +document.getElementById('p').value;
+  const D = +document.getElementById('d').value;
+  const Q = +document.getElementById('q').value;
+  document.getElementById('pVal').textContent = P;
+  document.getElementById('dVal').textContent = D;
+  document.getElementById('qVal').textContent = Q;
+
+  const A = Math.PI * (D/2) * (D/2);          // mm^2
+  const F = P * A * 0.1 / 1000;               // kN  (F[N]=P*A*0.1)
+  const v = Q * 16667 / A;                     // mm/s
+  const hyd = P * Q / 600;                      // kW
+  const motor = hyd / 0.85;                      // kW
+
+  document.getElementById('area').textContent  = A.toFixed(0);
+  document.getElementById('force').textContent = F.toFixed(2);
+  document.getElementById('vel').textContent   = v.toFixed(1);
+  document.getElementById('hyd').textContent   = hyd.toFixed(2);
+  document.getElementById('motor').textContent = motor.toFixed(2);
+}
+['p','d','q'].forEach(id => document.getElementById(id).addEventListener('input', recompute));
+recompute();
+</script>
+</body>
+</html>

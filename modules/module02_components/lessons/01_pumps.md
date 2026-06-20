@@ -79,7 +79,9 @@ where $\eta_{overall} = \eta_v \cdot \eta_m$ combines volumetric and mechanical 
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 1 — Hydraulic power)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 1 — Hydraulic power)
 
 The pump sits at the heart of S1. Trace the path: the electric motor shaft drives the pump; the pump draws oil from the reservoir through the inlet (suction) line; pressurized oil leaves through the outlet toward the valves. The pressure relief valve branches off the outlet, ready to dump flow back to the reservoir if pressure exceeds its setting.
 
@@ -131,6 +133,13 @@ A 2.2 kW motor is the next standard size. This confirms the workcell motor selec
 
 ## 7. Interactive demonstration
 
+
+**▶ Interactive demo — Component Explorer**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module02/component_explorer.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
+
 Run the pump flow model (build it in the coding exercise, or use this snippet):
 
 ```python
@@ -173,6 +182,13 @@ def actual_flow(displacement_cc, speed_rpm, vol_eff):
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module02/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Does a pump create pressure or flow? Explain what determines the other quantity.
 2. What is displacement, and what are its units?
@@ -233,3 +249,40 @@ The machine now has a **defined power source**. You can specify the pump that gi
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Valves: direction, pressure, and flow*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 02 (Components) of the Fluid-Powered Physical AI curriculum: "Pumps: the heart of the system". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Pumps: the heart of the system", Module 02 — Components) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Pumps: the heart of the system") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Pumps: the heart of the system", Module 02 — Components) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

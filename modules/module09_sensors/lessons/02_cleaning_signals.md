@@ -64,7 +64,9 @@ So averaging 9 samples cuts noise to 1/3; averaging 100 cuts it to 1/10. But the
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (the signal conditioning stage)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (the signal conditioning stage)
 
 Picture three traces of the same held-still position signal: the raw signal jittering wildly, a lightly-filtered signal that still wiggles but follows quickly, and a heavily-filtered signal that is smooth but visibly lags when the real position changes. The figure shows the tradeoff directly — as smoothing increases, the jitter shrinks but the lag grows. Overlay a step change in the real position, and the heavily-filtered trace arrives late and rounded while the lightly-filtered trace arrives promptly but noisily. The machine must choose where on this spectrum to sit — the visual makes the no-free-lunch nature of filtering concrete.
 
@@ -95,6 +97,13 @@ The machine chooses exponential smoothing with $\alpha = 0.4$: it meets the 20 m
 ---
 
 ## 7. Interactive demonstration
+
+
+**▶ Interactive demo — Sensor Signal Cleaner**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module09/signal_cleaner.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
 
 ```python
 import random
@@ -146,6 +155,13 @@ This is the machine's signal-conditioning layer, essential for clean perception 
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module09/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Name three sources of noise in the machine's sensor signals.
 2. What is the fundamental tradeoff every filter makes?
@@ -204,3 +220,40 @@ The machine now has **clean, usable perception**. You can filter the machine's n
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — Sensing flow and detecting what the machine cannot see directly*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 09 (Sensors) of the Fluid-Powered Physical AI curriculum: "Cleaning the machine's senses". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Cleaning the machine's senses", Module 09 — Sensors) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Cleaning the machine's senses") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Cleaning the machine's senses", Module 09 — Sensors) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

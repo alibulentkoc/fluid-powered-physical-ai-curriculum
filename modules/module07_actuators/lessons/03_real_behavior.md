@@ -65,7 +65,9 @@ These models give the twin the real cylinder's behavior: the friction that resis
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (the cylinder model, now with real friction)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (the cylinder model, now with real friction)
 
 The signature visual is the Stribeck friction curve: friction force on the vertical axis, velocity on the horizontal. It starts high at zero velocity (static/breakout), dips to a minimum at low speed, then rises with the viscous term — a characteristic check-mark shape. Overlay a slow-approach trajectory and you see the stick-slip: the operating point bounces around the dip, sticking and slipping. A second visual shows the cushioning: the velocity profile near the stroke end, decelerating smoothly to zero instead of hitting the end cap at full speed. Together these are the difference between the ideal cylinder and the real one the twin must capture.
 
@@ -192,3 +194,40 @@ The machine now has a **realistic actuator model**. The twin predicts the fricti
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — Choosing the machine's actuator type (cylinder vs. motor)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 07 (Actuators) of the Fluid-Powered Physical AI curriculum: "The machine's real actuator behaves imperfectly". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine's real actuator behaves imperfectly", Module 07 — Actuators) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine's real actuator behaves imperfectly") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine's real actuator behaves imperfectly", Module 07 — Actuators) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

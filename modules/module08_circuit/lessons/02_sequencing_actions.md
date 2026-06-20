@@ -64,7 +64,9 @@ For the workcell, a positioning stroke of ~150 mm at ~90 mm/s takes ~1.7 s; the 
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (the DECIDE → COMMAND → ACTUATE sequence)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (the DECIDE → COMMAND → ACTUATE sequence)
 
 Picture the task as a timeline, one actuator active in each segment: the primary cylinder extends (position), then the end-effector closes (grip), then the primary cylinder retracts (move), then the end-effector opens (release). At any instant, exactly one bar is active, drawing the full pump flow. A state diagram captures the logic: each state commands one actuator and waits for its completion signal before transitioning to the next. This state-machine view is exactly how the machine's controller (Module 10) will sequence the task — the figure previews the machine's decision logic.
 
@@ -194,3 +196,40 @@ The machine now has **coordinated, sequenced action** — the bridge from single
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — How the machine fails safely (circuit protection)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 08 (Circuit) of the Fluid-Powered Physical AI curriculum: "The machine sequences its actions". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine sequences its actions", Module 08 — Circuit) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine sequences its actions") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine sequences its actions", Module 08 — Circuit) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

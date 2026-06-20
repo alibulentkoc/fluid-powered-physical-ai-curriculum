@@ -61,7 +61,9 @@ This holds the load statically and only releases it when the machine adds the pr
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (relief valve at the pump outlet)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (relief valve at the pump outlet)
 
 Picture the relief valve as a pressure-triggered escape hatch at the machine's pressure outlet. Below the setting, it stays shut and the machine works normally. The instant pressure reaches the limit — because the closed-center valve trapped the flow, or a load spiked the pressure — the hatch opens and excess flow escapes to tank, capping the pressure. A pressure-vs-time trace shows pressure rising to the relief setting and then flat-lining there, held at the ceiling no matter how hard the machine pushes. That flat line is the machine's guarantee that it cannot destroy itself with its own pressure.
 
@@ -188,3 +190,40 @@ The machine now has **pressure protection and safe load holding**. The relief va
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — How the machine controls its speed (flow control)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 06 (Valves) of the Fluid-Powered Physical AI curriculum: "The machine protects itself and holds loads". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine protects itself and holds loads", Module 06 — Valves) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine protects itself and holds loads") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine protects itself and holds loads", Module 06 — Valves) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

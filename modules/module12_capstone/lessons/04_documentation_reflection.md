@@ -66,7 +66,9 @@ This is the test of good documentation: it contains everything needed to reprodu
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/curriculum_roadmap.svg` (the complete journey)
+![Curriculum Roadmap](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/curriculum_roadmap.svg)
+
+*Figure: curriculum roadmap — see full diagram above.* (the complete journey)
 
 Picture the full curriculum roadmap, every module from Foundations (01) through this Capstone (12), each having added a capability or a subsystem, all converging on the complete Smart Agricultural Workcell. The figure shows the journey whole: the physical machine built across Modules 01–08, the perception added in 09, the control in 10, the twin in 11, and the demonstration, validation, and documentation in 12. Beside it, the documentation set — schematic, wiring, code, twin, validation report, final report, video — the machine captured completely. And an arrow extending beyond, into the extensions the platform enables. This roadmap is the curriculum's arc, finished: from first principles to a complete, intelligent, documented machine, and onward.
 
@@ -215,3 +217,40 @@ This completes the Fluid-Powered Physical AI curriculum. The Smart Agricultural 
 ---
 
 *Lesson 04 — Version 0.1 | Module 12 lesson content complete. The machine is demonstrated, documented, and understood. THE CURRICULUM IS COMPLETE.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 12 (Capstone) of the Fluid-Powered Physical AI curriculum: "The machine, documented and understood". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine, documented and understood", Module 12 — Capstone) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine, documented and understood") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine, documented and understood", Module 12 — Capstone) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valve Flow-Control Demo</title><style>
+:root{--fp-blue:#185FA5;--fp-blue-dark:#0d3d6e;--fp-green:#2e9e5b;--fp-red:#d4504e;--fp-amber:#e0a030;--fp-bg:#fff;--fp-panel:#f6f8fa;--fp-border:#d9e1e8;--fp-text:#1a2733;--fp-muted:#5a6b7b}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--fp-text);background:var(--fp-bg);margin:0;padding:24px;line-height:1.55}
+.fp-wrap{max-width:820px;margin:0 auto}
+.fp-header{border-bottom:3px solid var(--fp-blue);padding-bottom:12px;margin-bottom:20px}
+.fp-header h1{font-size:1.45rem;margin:0 0 4px;color:var(--fp-blue-dark)}
+.fp-header .fp-sub{color:var(--fp-muted);font-size:.92rem}
+.fp-panel{background:var(--fp-panel);border:1px solid var(--fp-border);border-radius:10px;padding:20px;margin-bottom:18px}
+.fp-control{margin-bottom:16px}.fp-control label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.fp-control .fp-val{color:var(--fp-blue);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--fp-blue)}
+select,input[type=number]{width:100%;padding:8px 10px;border:1px solid var(--fp-border);border-radius:6px;font-size:.95rem;background:#fff}
+.fp-out{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:8px}
+.fp-metric{background:#fff;border:1px solid var(--fp-border);border-radius:8px;padding:12px 14px;text-align:center}
+.fp-metric .fp-num{font-size:1.4rem;font-weight:700;color:var(--fp-blue)}
+.fp-metric .fp-label{font-size:.78rem;color:var(--fp-muted);margin-top:2px}
+.fp-metric.pass .fp-num{color:var(--fp-green)}.fp-metric.fail .fp-num{color:var(--fp-red)}
+.fp-btn{background:var(--fp-blue);color:#fff;border:none;border-radius:7px;padding:10px 18px;font-weight:600;cursor:pointer}
+.fp-btn:hover{background:var(--fp-blue-dark)}.fp-btn.secondary{background:#fff;color:var(--fp-blue);border:1.5px solid var(--fp-blue)}
+canvas{max-width:100%;background:#fff;border-radius:8px;border:1px solid var(--fp-border);margin-top:8px}
+.fp-note{font-size:.85rem;color:var(--fp-muted);margin-top:10px}
+h2{font-size:1.05rem;color:var(--fp-blue-dark);margin:0 0 14px}
+code{background:#eef2f5;padding:1px 5px;border-radius:4px;font-size:.88em}
+</style></head>
+<body><div class="fp-wrap">
+<div class="fp-header"><h1>Valve Flow-Control Demo</h1><div class="fp-sub">Module 06 — the machine controls flow and protects itself</div></div>
+<div class="fp-panel"><h2>Spool & relief settings</h2>
+ <div class="fp-control"><label>Spool opening: <span class="fp-val" id="xV">50</span> %</label><input type="range" id="x" min="0" max="100" value="50"></div>
+ <div class="fp-control"><label>Pressure drop across valve: <span class="fp-val" id="dpV">30</span> bar</label><input type="range" id="dp" min="1" max="100" value="30"></div>
+ <div class="fp-control"><label>Relief valve setting: <span class="fp-val" id="rV">120</span> bar</label><input type="range" id="r" min="50" max="200" value="120" step="5"></div>
+ <div class="fp-out">
+ <div class="fp-metric"><div class="fp-num" id="flow">—</div><div class="fp-label">flow through valve (LPM)</div></div>
+ <div class="fp-metric" id="relBox"><div class="fp-num" id="rel">—</div><div class="fp-label">relief status</div></div></div>
+ <div class="fp-note">Orifice flow Q ∝ opening × √Δp (Cd·A·√(2Δp/ρ)). If system pressure would exceed the relief setting, the relief opens to protect the machine.</div></div>
+</div><script>function f(){const x=+document.getElementById('x').value,dp=+document.getElementById('dp').value,r=+document.getElementById('r').value;
+ document.getElementById('xV').textContent=x;document.getElementById('dpV').textContent=dp;document.getElementById('rV').textContent=r;
+ const flow=(x/100)*0.6*Math.sqrt(dp)*2.2; // illustrative orifice flow
+ document.getElementById('flow').textContent=flow.toFixed(1);
+ const open=dp>=r, box=document.getElementById('relBox');
+ document.getElementById('rel').textContent=open?'OPEN':'closed';
+ box.className='fp-metric '+(open?'fail':'pass');}
+ ['x','dp','r'].forEach(i=>document.getElementById(i).addEventListener('input',f));f();</script></body></html>

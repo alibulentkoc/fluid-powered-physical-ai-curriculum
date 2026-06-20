@@ -94,7 +94,9 @@ For the baseline workcell with linear tasks, no motor is needed — but the mach
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 4 — actuation options)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 4 — actuation options)
 
 Picture the decision as a fork driven by the task. A task arrives with requirements: is the motion linear or rotary? Does it need finite controlled travel with position hold, or continuous rotation? Linear-and-holdable flows down the cylinder branch; rotary-and-continuous flows down the motor branch. The figure shows the machine's actuators as a small toolkit — a cylinder for linear tasks, a motor for rotary ones — with each task routed to the actuator its requirements demand. The machine is not "a cylinder machine" or "a motor machine"; it is a machine that picks the right actuator per task.
 
@@ -236,3 +238,40 @@ The deliverable of this module is the **Actuator Selection Report** for the Smar
 ---
 
 *Lesson 04 — Version 0.1 | Module 07 lesson content complete. Next: Module 07 summary, exercises, code, and Lab 07.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 07 (Actuators) of the Fluid-Powered Physical AI curriculum: "Choosing the machine's actuator type". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Choosing the machine's actuator type", Module 07 — Actuators) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Choosing the machine's actuator type") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Choosing the machine's actuator type", Module 07 — Actuators) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

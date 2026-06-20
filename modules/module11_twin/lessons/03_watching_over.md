@@ -70,7 +70,9 @@ A growing pressure residual → seal leak; a linear position residual with norma
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (residual fault detection)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (residual fault detection)
 
 Picture a residual plot for each signal — position, pressure, flow — each a line that should hover at zero. For a healthy machine, all hover in a thin noise band around zero. Now introduce faults one at a time: the pressure residual peels downward steadily (seal leak); the position residual ramps up linearly (sensor drift); the residual shows different amplitudes on extend vs. retract strokes (valve hysteresis). The figure shows each fault's distinct signature — the shape of the departure naming the fault. A threshold band (dashed lines at ±3σ) marks where the machine raises a flag. This panel of residual signatures is the twin's diagnostic display: the machine reading its own health in the gaps between prediction and reality.
 
@@ -110,6 +112,13 @@ The twin detected an invisible fault (a sensor cannot report its own drift), cla
 ---
 
 ## 7. Interactive demonstration
+
+
+**▶ Interactive demo — Twin Residual Monitor**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module11/residual_monitor.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
 
 ```python
 def classify_fault(pos_residual_slope, pressure_residual_slope,
@@ -155,6 +164,13 @@ This is the twin's vigilance — residual-based fault detection and classificati
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module11/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Why are developing faults often invisible to direct sensors?
 2. What is the residual, and why does a small residual reliably mean "healthy"?
@@ -213,3 +229,40 @@ The machine now has **self-awareness of its health** — the twin's vigilance. Y
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — The twin improves itself and shows the operator (parameter estimation and the dashboard)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 11 (Digital Twin) of the Fluid-Powered Physical AI curriculum: "The twin watches over the machine". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The twin watches over the machine", Module 11 — Digital Twin) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The twin watches over the machine") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The twin watches over the machine", Module 11 — Digital Twin) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

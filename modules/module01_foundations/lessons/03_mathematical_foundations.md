@@ -181,7 +181,9 @@ For a gear pump at moderate pressure: $\eta_v \approx 0.90–0.95$, $\eta \appro
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg`
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.*
 
 The ACTUATE stage of the pipeline is governed entirely by the three equations in this lesson:
 
@@ -245,6 +247,13 @@ This is a small, efficient workcell — confirming the design intent.
 
 ## 7. Interactive demonstration
 
+
+**▶ Interactive demo — Hydraulic Sizing Calculator**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module01/sizing_calculator.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
+
 The Pascal's Law calculator in `code/module01/pascals_law.py` implements all three equations. Add this function to explore the power equation:
 
 ```python
@@ -298,6 +307,13 @@ This module is used in every subsequent code file in the curriculum.
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module01/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. State Pascal's Law in words. What is the SI unit of pressure?
 
@@ -365,3 +381,40 @@ The machine can now be **quantified**. You can compute its force, velocity, and 
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — Visual explanation (the workcell and its subsystems)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 01 (Foundations) of the Fluid-Powered Physical AI curriculum: "Mathematical foundations". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Mathematical foundations", Module 01 — Foundations) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Mathematical foundations") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Mathematical foundations", Module 01 — Foundations) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

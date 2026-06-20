@@ -61,7 +61,9 @@ But naive differentiation amplifies noise (a small position-measurement jitter b
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (the SENSE stage)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (the SENSE stage)
 
 Picture the machine's circuit now studded with sensors at the points that matter: pressure transducers on both sides of the primary cylinder, a position transducer along the rod, a load cell at the gripper jaw, and a flow sensor on the supply line (Lesson 03). Each sensor turns a physical quantity into an electrical signal that flows to the machine's controller. The figure shows the SENSE stage lighting up — the first stage of the pipeline, where the physical machine connects to its emerging intelligence. Arrows of information flow *from* the hydraulics *to* the controller, the reverse of the command arrows from Module 06. The machine is beginning to perceive.
 
@@ -196,3 +198,40 @@ The machine now has **perception** — its first senses. You can measure the mac
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Cleaning the machine's senses (signal conditioning and filtering)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 09 (Sensors) of the Fluid-Powered Physical AI curriculum: "The machine needs to perceive its own state". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine needs to perceive its own state", Module 09 — Sensors) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine needs to perceive its own state") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine needs to perceive its own state", Module 09 — Sensors) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

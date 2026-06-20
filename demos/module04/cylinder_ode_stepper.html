@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cylinder ODE Stepper</title><style>
+:root{--fp-blue:#185FA5;--fp-blue-dark:#0d3d6e;--fp-green:#2e9e5b;--fp-red:#d4504e;--fp-amber:#e0a030;--fp-bg:#fff;--fp-panel:#f6f8fa;--fp-border:#d9e1e8;--fp-text:#1a2733;--fp-muted:#5a6b7b}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--fp-text);background:var(--fp-bg);margin:0;padding:24px;line-height:1.55}
+.fp-wrap{max-width:820px;margin:0 auto}
+.fp-header{border-bottom:3px solid var(--fp-blue);padding-bottom:12px;margin-bottom:20px}
+.fp-header h1{font-size:1.45rem;margin:0 0 4px;color:var(--fp-blue-dark)}
+.fp-header .fp-sub{color:var(--fp-muted);font-size:.92rem}
+.fp-panel{background:var(--fp-panel);border:1px solid var(--fp-border);border-radius:10px;padding:20px;margin-bottom:18px}
+.fp-control{margin-bottom:16px}.fp-control label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.fp-control .fp-val{color:var(--fp-blue);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--fp-blue)}
+select,input[type=number]{width:100%;padding:8px 10px;border:1px solid var(--fp-border);border-radius:6px;font-size:.95rem;background:#fff}
+.fp-out{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:8px}
+.fp-metric{background:#fff;border:1px solid var(--fp-border);border-radius:8px;padding:12px 14px;text-align:center}
+.fp-metric .fp-num{font-size:1.4rem;font-weight:700;color:var(--fp-blue)}
+.fp-metric .fp-label{font-size:.78rem;color:var(--fp-muted);margin-top:2px}
+.fp-metric.pass .fp-num{color:var(--fp-green)}.fp-metric.fail .fp-num{color:var(--fp-red)}
+.fp-btn{background:var(--fp-blue);color:#fff;border:none;border-radius:7px;padding:10px 18px;font-weight:600;cursor:pointer}
+.fp-btn:hover{background:var(--fp-blue-dark)}.fp-btn.secondary{background:#fff;color:var(--fp-blue);border:1.5px solid var(--fp-blue)}
+canvas{max-width:100%;background:#fff;border-radius:8px;border:1px solid var(--fp-border);margin-top:8px}
+.fp-note{font-size:.85rem;color:var(--fp-muted);margin-top:10px}
+h2{font-size:1.05rem;color:var(--fp-blue-dark);margin:0 0 14px}
+code{background:#eef2f5;padding:1px 5px;border-radius:4px;font-size:.88em}
+</style></head>
+<body><div class="fp-wrap">
+<div class="fp-header"><h1>Cylinder ODE Stepper</h1><div class="fp-sub">Module 04 — the machine's first dynamic model, stepped in time</div></div>
+<div class="fp-panel"><h2>Step the simulation</h2>
+ <div class="fp-control"><label>Commanded valve (−1 retract … +1 extend): <span class="fp-val" id="uV">1.0</span></label>
+ <input type="range" id="u" min="-1" max="1" value="1" step="0.1"></div>
+ <button class="fp-btn" id="step">Step 0.1 s</button>
+ <button class="fp-btn secondary" id="reset">Reset</button>
+ <div class="fp-out" style="margin-top:14px">
+ <div class="fp-metric"><div class="fp-num" id="tm">0.0</div><div class="fp-label">time (s)</div></div>
+ <div class="fp-metric"><div class="fp-num" id="pos">0.0</div><div class="fp-label">position (mm)</div></div>
+ <div class="fp-metric"><div class="fp-num" id="vel">0.0</div><div class="fp-label">velocity (mm/s)</div></div></div>
+ <canvas id="cv" width="760" height="220"></canvas>
+ <div class="fp-note">A first-order velocity model: the valve commands flow, flow sets piston velocity, velocity integrates to position (clamped 0–300 mm). This is the seed of the digital twin.</div></div>
+</div><script>let t=0,pos=0,vel=0,hist=[];const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+ function draw(){ctx.clearRect(0,0,cv.width,cv.height);ctx.strokeStyle='#d9e1e8';ctx.beginPath();ctx.moveTo(40,10);ctx.lineTo(40,200);ctx.lineTo(750,200);ctx.stroke();
+ ctx.strokeStyle='#185FA5';ctx.lineWidth=2;ctx.beginPath();hist.forEach((p,i)=>{const x=40+i*7,y=200-(p/300)*185;i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();
+ ctx.fillStyle='#5a6b7b';ctx.font='11px sans-serif';ctx.fillText('position 0–300 mm',46,20);}
+ function step(){const u=+document.getElementById('u').value;vel=132*u; // mm/s velocity-mode
+ pos=Math.max(0,Math.min(300,pos+vel*0.1));t+=0.1;hist.push(pos);if(hist.length>100)hist.shift();
+ document.getElementById('tm').textContent=t.toFixed(1);document.getElementById('pos').textContent=pos.toFixed(1);
+ document.getElementById('vel').textContent=(pos<=0||pos>=300?0:vel).toFixed(1);draw();}
+ document.getElementById('u').addEventListener('input',e=>document.getElementById('uV').textContent=(+e.target.value).toFixed(1));
+ document.getElementById('step').addEventListener('click',step);
+ document.getElementById('reset').addEventListener('click',()=>{t=0;pos=0;vel=0;hist=[];document.getElementById('tm').textContent='0.0';document.getElementById('pos').textContent='0.0';document.getElementById('vel').textContent='0.0';draw();});
+ draw();</script></body></html>

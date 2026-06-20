@@ -1,7 +1,7 @@
-# Which pump the machine should use
+# Choosing the right power source for the workcell
 ## Module 05 · Lesson 02
 
-*The machine needs to generate flow — but several kinds of pump could do it. This lesson is the machine's selection decision: which pump fits the workcell's mission, and why the others do not.*
+*The machine has fixed requirements — about 10 LPM, about 100 bar, low cost, simple, reliable, easy to maintain. This lesson is the engineering decision that follows: given those requirements, which hydraulic power source does the machine choose?*
 
 ---
 
@@ -11,44 +11,71 @@ The machine knows it needs a pump (Lesson 01). But "a pump" is not a decision �
 
 This lesson is not a tour of pump types for their own sake. It is the engineering decision the machine's designer must make: given the workcell's mission — bench-scale, robust, affordable, ~100 bar, fixed flow — which pump is right, and why are the alternatives wrong for *this* machine?
 
-**Benchmark task supported:** Precision Positioning (the pump's character — its flow stability and pressure capability — sets the quality of every motion the machine makes).
+**Benchmark task supported:** Precision Positioning. The pump choice directly shapes the machine's positioning performance: the pump's flow sets the machine's **motion speed**, its flow *stability* (pulsation and leakage) sets the machine's **repeatability**, and its pressure capability sets whether the machine can hold position under load — its **positioning accuracy**. A poor pump choice degrades all three. The power source is therefore not a side decision; it is the foundation of how well the machine can position anything.
 
 ---
 
-## 1. The machine's problem
+## 1. The machine's requirements
 
-The machine needs flow, and it has a specific operating envelope: around 100 bar of pressure, roughly 10 LPM of flow, a constant duty that does not need its flow varied on the fly, and a tight budget because the workcell is meant to be buildable and affordable. It also lives a bench life that may involve less-than-perfect fluid cleanliness.
+Before considering any pump, the machine states what it needs. This is the engineering starting point — the requirements come first, and the choice is judged against them. The Smart Agricultural Workcell's power source must deliver:
 
-Several pump families can generate flow. But a pump that is perfect for a 350 bar aircraft actuator is wrong for this machine — overcomplex, overpriced, overkill. A pump optimized for moving huge volumes of water at low pressure cannot build the workcell's pressure at all.
+| Requirement | Target | Why the machine needs it |
+|-------------|--------|--------------------------|
+| Flow | ≈ 10 LPM | to drive the cylinder at the machine's working speed |
+| Pressure | ≈ 100 bar | to produce the machine's gripping and positioning force |
+| Cost | low | the workcell is meant to be buildable and affordable |
+| Simplicity | high | educational clarity; few parts to understand and fail |
+| Reliability | high | the machine must run repeatably, lesson after lesson |
+| Maintenance | easy | bench use with imperfect fluid cleanliness |
 
-The machine's problem: choose the pump whose strengths match the workcell's mission and whose weaknesses do not matter here.
+Notice what is *not* on the list: extreme pressure, variable flow on demand, maximum efficiency. The machine does not need these, and requirements it does not have should not drive the decision. This list is the yardstick every candidate is measured against.
 
----
-
-## 2. The concept: matching the pump to the mission
-
-All the pumps the machine would consider are **positive-displacement** (Lesson 01 ruled out centrifugal — it cannot build hydraulic pressure). Within that family, three types are candidates. The machine evaluates each against its mission.
-
-**Gear pump** — two meshing gears carry fluid around in their tooth pockets.
-- *Strengths:* simple, cheap, rugged, tolerant of contamination, reliable fixed flow.
-- *Weaknesses:* moderate efficiency, fixed displacement only, some flow pulsation, moderate maximum pressure (but well above the workcell's 100 bar).
-- *Fit for the machine:* **excellent.** Robust and affordable, exactly matching a bench-scale agricultural machine that values reliability over peak performance.
-
-**Vane pump** — a slotted rotor with sliding vanes sweeps fluid inside a cam ring.
-- *Strengths:* quieter and smoother than gear pumps, can be made variable-displacement, good mid-pressure performance.
-- *Weaknesses:* more complex, less contamination-tolerant, more expensive than a gear pump.
-- *Fit for the machine:* acceptable but unnecessary. The workcell does not need its quietness or variable displacement, and it gives up some robustness.
-
-**Piston pump** — pistons in a rotating barrel driven by a swashplate.
-- *Strengths:* highest pressure (350+ bar), highest efficiency, precise variable displacement.
-- *Weaknesses:* most complex, most expensive, least tolerant of contamination, demanding clean fluid and careful maintenance.
-- *Fit for the machine:* **overkill.** Its high-pressure, high-efficiency, variable-flow capabilities are wasted on a 100 bar fixed-flow bench machine, while its cost and fragility actively hurt the mission.
-
-The decision writes itself once the machine's mission is the criterion: the **gear pump** wins. Not because it is the "best" pump in the abstract — the piston pump is more capable — but because it is the best pump *for this machine*. The strengths it offers (robustness, low cost, reliable fixed flow) are exactly what the workcell needs; the strengths it lacks (variable displacement, extreme pressure) are exactly what the workcell does not.
+The machine's problem: given these six requirements, choose the power source that satisfies them best.
 
 ---
 
-## 3. Mathematical model
+## 2. Evaluating the options
+
+A power source for the machine must be a **positive-displacement** pump — Lesson 01 ruled out centrifugal pumps because they cannot build hydraulic pressure. Within positive displacement, three candidates exist. The machine evaluates each *against the requirements above* — not as a taxonomy to memorize, but as options to accept or reject.
+
+**Option A — Gear pump** (two meshing gears carry fluid in their tooth pockets)
+- *Pros:* cheap, simple, rugged, contamination-tolerant, reliable fixed flow, easy to maintain. Handles 100 bar with margin.
+- *Cons:* moderate efficiency, fixed displacement only, slight flow pulsation.
+- *Against the requirements:* hits every one — low cost ✓, simple ✓, reliable ✓, easy maintenance ✓, ample flow and pressure ✓.
+
+**Option B — Vane pump** (sliding vanes in a slotted rotor sweep fluid in a cam ring)
+- *Pros:* quieter, smoother flow, can be variable-displacement, good mid-pressure performance.
+- *Cons:* more complex, less contamination-tolerant, more expensive than a gear pump.
+- *Against the requirements:* meets flow and pressure, but its advantages (quietness, variable flow) are things the machine does not need, and it costs more and tolerates less dirt — losing on cost, simplicity, and maintenance.
+
+**Option C — Piston pump** (pistons in a rotating barrel driven by a swashplate)
+- *Pros:* very high pressure (350+ bar), highest efficiency, precise variable displacement.
+- *Cons:* most complex, most expensive, least contamination-tolerant, demands clean fluid and careful maintenance.
+- *Against the requirements:* its strengths are all things the machine does not require, while it fails hardest on cost, simplicity, and maintenance — the opposite of what the workcell values.
+
+### The decision matrix
+
+Scoring each option against the machine's requirements (●●● strong, ●● adequate, ● weak):
+
+| Requirement | Gear | Vane | Piston |
+|-------------|:----:|:----:|:------:|
+| Flow ≈10 LPM | ●●● | ●●● | ●●● |
+| Pressure ≈100 bar | ●●● | ●●● | ●●● |
+| Low cost | ●●● | ●● | ● |
+| Simplicity | ●●● | ●● | ● |
+| Reliability | ●●● | ●● | ●● |
+| Easy maintenance | ●●● | ●● | ● |
+| **Fit for this machine** | **best** | acceptable | overkill |
+
+All three *can* generate the flow and pressure. The decision is made on the requirements where they differ — cost, simplicity, reliability, maintenance — and on those, the **gear pump** wins decisively.
+
+### The selected power source
+
+The machine chooses the **gear pump**. The reasoning is engineering, not preference: the gear pump satisfies every requirement, and the requirements where the other pumps "win" (extreme pressure, variable flow, peak efficiency) are requirements the machine does not have. Choosing the more capable piston pump would mean paying — in cost, complexity, and fragility — for capability the workcell would never use. The best pump *in the abstract* is not the best pump *for this machine*. The requirements decide, and they point to the gear pump.
+
+---
+
+## 3. Confirming the choice (mathematical model)
 
 The selection is justified, but the machine must confirm the chosen gear pump can actually meet its numbers. Two checks:
 
@@ -66,7 +93,9 @@ Both checks pass. The machine's gear pump selection is confirmed against its act
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 1)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 1)
 
 Picture the three candidate pumps side by side on a simple decision space: cost on one axis, capability (pressure and control sophistication) on the other. The piston pump sits high on both — expensive and highly capable. The gear pump sits low on both — cheap and adequately capable. The workcell's mission marker lands squarely in the gear pump's region: it needs modest capability at low cost. The figure makes the selection visible — the machine picks the pump whose region contains its mission, not the most capable pump available.
 
@@ -185,8 +214,9 @@ A research team wants to upgrade the workcell to do smooth variable-speed precis
 
 ## 12. Key takeaways
 
+- Engineering selection starts with the machine's **requirements**, then evaluates options against them — not with a catalog of pump types.
 - All the machine's candidate pumps are positive-displacement; the choice is among gear, vane, and piston.
-- The machine picks the pump whose strengths match its mission, not the most capable pump available.
+- The machine picks the pump that best satisfies its requirements, not the most capable pump available.
 - For the workcell — bench-scale, robust, affordable, ~100 bar, fixed flow — the gear pump wins decisively.
 - The piston pump is overkill: its high-pressure, high-efficiency, variable-flow strengths are wasted, while its cost and fragility hurt the mission.
 - The selection is confirmed by two numerical checks: pressure rating ≥ operating + margin, and actual flow ≥ required flow.
@@ -206,3 +236,40 @@ The machine now has a **justified power-source selection**. You can choose the w
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — How much power the machine actually delivers (efficiency)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 05 (Pumps) of the Fluid-Powered Physical AI curriculum: "Choosing the right power source for the workcell". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Choosing the right power source for the workcell", Module 05 — Pumps) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Choosing the right power source for the workcell") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Choosing the right power source for the workcell", Module 05 — Pumps) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

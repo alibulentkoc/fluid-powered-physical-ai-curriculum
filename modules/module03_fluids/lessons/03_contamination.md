@@ -80,7 +80,9 @@ $$\text{Efficiency} = \left(1 - \frac{1}{\beta_x}\right) \times 100\%$$
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 2 — filter placement)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 2 — filter placement)
 
 Picture the contamination balance as a tank with inflows and an outflow. Particles flow *in* from ingestion (breather, seals) and generation (component wear). Particles flow *out* through the filter. The fluid's steady-state cleanliness is wherever these balance.
 
@@ -216,3 +218,40 @@ The machine can now be **kept clean enough to stay precise**. You can set the wo
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — Energy losses in fluid transmission*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 03 (Fluids) of the Fluid-Powered Physical AI curriculum: "Contamination, filtration, and ISO cleanliness". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Contamination, filtration, and ISO cleanliness", Module 03 — Fluids) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Contamination, filtration, and ISO cleanliness") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Contamination, filtration, and ISO cleanliness", Module 03 — Fluids) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

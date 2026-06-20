@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge Check — Module 01</title>
+<style>
+:root{--fp-blue:#185FA5;--fp-blue-dark:#0d3d6e;--fp-green:#2e9e5b;--fp-red:#d4504e;--fp-accent:#2196F3;--fp-bg:#fff;--fp-panel:#f6f8fa;--fp-border:#d9e1e8;--fp-text:#1a2733;--fp-muted:#5a6b7b}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--fp-text);background:var(--fp-bg);margin:0;padding:24px;line-height:1.55}
+.fp-wrap{max-width:760px;margin:0 auto}
+.fp-header{border-bottom:3px solid var(--fp-blue);padding-bottom:12px;margin-bottom:8px}
+.fp-header h1{font-size:1.4rem;margin:0 0 4px;color:var(--fp-blue-dark)}
+.fp-header .fp-sub{color:var(--fp-muted);font-size:.92rem}
+.fp-intro{font-size:.9rem;color:var(--fp-muted);margin:14px 0 22px}
+.fp-q{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--fp-border)}
+.fp-qtext{font-weight:600;margin-bottom:12px}
+.fp-qtext .n{color:var(--fp-blue);margin-right:6px}
+.fp-opt{display:block;padding:11px 14px;margin-bottom:8px;border:1.5px solid var(--fp-border);border-radius:8px;cursor:pointer;transition:all .12s;background:#fff}
+.fp-opt:hover{border-color:var(--fp-accent);background:#f0f7ff}
+.fp-opt.correct{border-color:var(--fp-green);background:#eafbf0;cursor:default}
+.fp-opt.wrong{border-color:var(--fp-red);background:#fdeceb;cursor:default}
+.fp-opt.locked{cursor:default;opacity:.75}
+.fp-fb{font-size:.88rem;margin-top:8px;padding:9px 12px;border-radius:6px;display:none}
+.fp-fb.show{display:block}
+.fp-fb.ok{background:#eafbf0;color:#1d6b3c}
+.fp-fb.no{background:#fdeceb;color:#9c2b29}
+.fp-score{font-size:1.1rem;font-weight:700;text-align:center;padding:16px;background:var(--fp-panel);border-radius:8px;margin-top:10px}
+.fp-reset{display:block;margin:14px auto 0;background:#fff;color:var(--fp-blue);border:1.5px solid var(--fp-blue);border-radius:7px;padding:9px 18px;font-weight:600;cursor:pointer}
+code{background:#eef2f5;padding:1px 5px;border-radius:4px;font-size:.88em}
+</style>
+</head>
+<body>
+<div class="fp-wrap">
+  <div class="fp-header">
+    <h1>Knowledge Check — Module 01</h1>
+    <div class="fp-sub">Foundations of Fluid Power and Physical AI</div>
+  </div>
+  <p class="fp-intro">Formative — unlimited attempts, immediate feedback; does not affect your grade. Click an answer to check it.</p>
+  <div id="quiz"></div>
+  <div class="fp-score" id="score">Answer the questions to see your score.</div>
+  <button class="fp-reset" onclick="location.reload()">Reset quiz</button>
+</div>
+
+<script>
+const QUESTIONS = [
+  {
+    q: "Pascal's Law, in equation form, is:",
+    opts: ["P = F × A", "P = F / A", "F = Q / A", "P = ρgh only"],
+    correct: 1,
+    fb: "Pressure equals force divided by the area it acts on: P = F / A."
+  },
+  {
+    q: "A cylinder has a 100 mm bore at 200 bar. Using F = P × A × 0.1, the extend force is closest to:",
+    opts: ["15.7 kN", "78.5 kN", "157 kN", "314 kN"],
+    correct: 2,
+    fb: "A = π·50² = 7854 mm²; F = 200 × 7854 × 0.1 = 157,080 N ≈ 157 kN."
+  },
+  {
+    q: "Which formula gives hydraulic power directly from bar and LPM?",
+    opts: ["P = p × Q / 600", "P = p × Q / 60", "P = p × Q × 600", "P = p / Q"],
+    correct: 0,
+    fb: "P[kW] = p[bar] × Q[LPM] / 600. The 1/600 folds in all the unit conversions."
+  },
+  {
+    q: "At 160 bar and 12 LPM, the hydraulic power is:",
+    opts: ["1.6 kW", "3.2 kW", "19.2 kW", "0.32 kW"],
+    correct: 1,
+    fb: "P = (160 × 12) / 600 = 3.2 kW."
+  },
+  {
+    q: "Continuity (Q = A·v) means that for the SAME flow into a smaller area, the piston velocity is:",
+    opts: ["lower", "higher", "unchanged", "zero"],
+    correct: 1,
+    fb: "v = Q/A: smaller area → higher velocity. This is why retract (smaller rod-side area) is faster than extend."
+  },
+  {
+    q: "The two subsystems that turn a 'dumb' hydraulic actuator into an intelligent one are:",
+    opts: ["pump and valves", "sensing/intelligence and the digital twin", "reservoir and filter", "cylinder and motor"],
+    correct: 1,
+    fb: "S5 (sensing & intelligence) adds perception and decisions; S6 (digital twin) adds a parallel model that validates and detects faults."
+  },
+  {
+    q: "Why is Fluid-Powered Physical AI called an underserved field?",
+    opts: [
+      "Hydraulics is obsolete",
+      "Most Physical AI assumes electric actuation, while agriculture and heavy industry run on fluid power",
+      "Fluid power cannot be made intelligent",
+      "There is too much material already"
+    ],
+    correct: 1,
+    fb: "Most open robotics/AI material assumes electric motors; almost none addresses bringing intelligence into fluid-powered machines."
+  },
+  {
+    q: "Convert 1500 PSI to bar (1 bar ≈ 14.5 PSI):",
+    opts: ["≈ 103 bar", "≈ 1500 bar", "≈ 21,750 bar", "≈ 10 bar"],
+    correct: 0,
+    fb: "1500 / 14.5 ≈ 103 bar."
+  }
+];
+
+const quizEl = document.getElementById('quiz');
+const scoreEl = document.getElementById('score');
+let answered = 0, correct = 0;
+
+QUESTIONS.forEach((item, qi) => {
+  const qDiv = document.createElement('div');
+  qDiv.className = 'fp-q';
+  qDiv.innerHTML = `<div class="fp-qtext"><span class="n">Q${qi+1}.</span>${item.q}</div>`;
+  item.opts.forEach((opt, oi) => {
+    const o = document.createElement('div');
+    o.className = 'fp-opt';
+    o.textContent = opt;
+    o.onclick = () => choose(qDiv, item, qi, oi);
+    qDiv.appendChild(o);
+  });
+  const fb = document.createElement('div');
+  fb.className = 'fp-fb';
+  qDiv.appendChild(fb);
+  quizEl.appendChild(qDiv);
+});
+
+const done = new Set();
+function choose(qDiv, item, qi, oi){
+  if (done.has(qi)) return;
+  done.add(qi);
+  const opts = qDiv.querySelectorAll('.fp-opt');
+  opts.forEach((o, i) => {
+    o.classList.add('locked');
+    if (i === item.correct) o.classList.add('correct');
+    if (i === oi && oi !== item.correct) o.classList.add('wrong');
+  });
+  const fb = qDiv.querySelector('.fp-fb');
+  const isRight = oi === item.correct;
+  fb.classList.add('show', isRight ? 'ok' : 'no');
+  fb.innerHTML = (isRight ? '✓ Correct. ' : '✗ Not quite. ') + item.fb;
+  answered++; if (isRight) correct++;
+  scoreEl.textContent = `Score: ${correct} / ${answered} answered` +
+    (answered === QUESTIONS.length ? ` — ${correct >= 6 ? 'great, you are ready for Module 02!' : 'review the lesson and try again.'}` : '');
+}
+</script>
+</body>
+</html>

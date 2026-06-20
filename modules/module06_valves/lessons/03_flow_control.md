@@ -60,7 +60,9 @@ With pressure compensation, the machine commands a speed and *gets* that speed, 
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (the ACTUATE stage, speed regulation)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (the ACTUATE stage, speed regulation)
 
 Picture two plumbing layouts. In **meter-in**, the throttle sits between the valve and the cylinder's inlet — it controls how fast fluid *arrives*. In **meter-out**, the throttle sits between the cylinder's outlet and tank — it controls how fast fluid *leaves*. For a running load, imagine the cylinder being yanked forward by gravity: with meter-in, nothing holds it back and it lurches; with meter-out, the exiting fluid is squeezed through the throttle, and that back-pressure restrains the load like a hydraulic brake. The figure shows the load held in check by the meter-out restriction — the machine lowering smoothly instead of dropping.
 
@@ -91,6 +93,13 @@ So the machine traverses fast on full pump flow, then the meter-out valve thrott
 ---
 
 ## 7. Interactive demonstration
+
+
+**▶ Interactive demo — Valve Flow-Control Demo**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module06/valve_flow_control.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
 
 ```python
 import math
@@ -127,6 +136,13 @@ This is the machine's speed-control layer, feeding the digital twin's motion pre
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module06/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Why does varying pump speed alone not give the machine good approach-speed control?
 2. What is a flow control valve, and how does it set the machine's cylinder speed?
@@ -185,3 +201,40 @@ The machine now has **speed control of its motion**. Combined with the direction
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — Smooth control and commanding valves from the machine's brain (proportional valves + first control code)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 06 (Valves) of the Fluid-Powered Physical AI curriculum: "The machine controls its speed". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine controls its speed", Module 06 — Valves) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine controls its speed") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine controls its speed", Module 06 — Valves) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

@@ -64,7 +64,9 @@ This is the practical payoff of ordered commissioning — the machine knows *whe
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (all six subsystems integrated)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (all six subsystems integrated)
 
 Picture the complete machine as the full capstone architecture — all six subsystems shown together, connected: the HPU feeding the circuit, the valves directing flow to the actuators, the sensors reading state, the controller closing the loop, the twin running alongside. Commissioning lights these up in order, like a startup sequence: first the HPU glows (power confirmed), then the transport lines, then the valves and actuators (motion confirmed), then the sensors (perception confirmed), and finally the control and twin (intelligence confirmed). The figure shows the machine coming alive subsystem by subsystem, each confirmed before the next — the disciplined bring-up that turns an assembled machine into a working one. When all six are lit, the machine is commissioned: one complete, confirmed system.
 
@@ -199,3 +201,40 @@ The machine is now a **commissioned, complete system** — assembled, brought up
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Closing every loop on the complete machine (integration and tuning)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 12 (Capstone) of the Fluid-Powered Physical AI curriculum: "The machine becomes one complete system". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine becomes one complete system", Module 12 — Capstone) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine becomes one complete system") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine becomes one complete system", Module 12 — Capstone) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

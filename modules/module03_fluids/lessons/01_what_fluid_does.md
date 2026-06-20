@@ -65,7 +65,9 @@ Air dramatically lowers the *effective* bulk modulus. Even 1% entrained air can 
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 2 — Fluid transport)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 2 — Fluid transport)
 
 The fluid touches every part of the system. Trace it: drawn from the reservoir by the pump, pressurized and sent through the supply line, directed by the valves, delivering force at the cylinder, then returning through the filter to the reservoir to shed heat and de-aerate before the cycle repeats.
 
@@ -194,3 +196,40 @@ The machine's **power-transmission medium is understood**. You can explain why n
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Viscosity and the viscosity-temperature relationship*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 03 (Fluids) of the Fluid-Powered Physical AI curriculum: "What hydraulic fluid actually does". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("What hydraulic fluid actually does", Module 03 — Fluids) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("What hydraulic fluid actually does") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("What hydraulic fluid actually does", Module 03 — Fluids) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

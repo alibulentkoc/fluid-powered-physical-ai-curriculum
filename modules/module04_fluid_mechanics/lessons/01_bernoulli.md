@@ -80,7 +80,9 @@ where $h_{loss}$ captures friction (from Module 03). This is the practical form 
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 2 — flow path)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 2 — flow path)
 
 Picture the energy as a fixed budget moving along the flow path. At the pump outlet the budget is mostly pressure head. As fluid accelerates into a narrower line, some pressure head converts to velocity head. As fluid passes through the line, friction skims energy off as $h_{loss}$ (heat). At the cylinder, what remains is the pressure available to do work.
 
@@ -209,3 +211,40 @@ The machine's **fluid energy can now be accounted for**. You can track how press
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Orifice flow and the valve model (the first digital twin component)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 04 (Fluid Mechanics) of the Fluid-Powered Physical AI curriculum: "Bernoulli and the energy equation". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Bernoulli and the energy equation", Module 04 — Fluid Mechanics) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Bernoulli and the energy equation") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Bernoulli and the energy equation", Module 04 — Fluid Mechanics) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

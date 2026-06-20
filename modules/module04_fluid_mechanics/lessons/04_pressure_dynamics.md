@@ -75,7 +75,9 @@ Four coupled first-order ODEs. This is the complete cylinder model — the heart
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (cylinder ODE + valve model blocks)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (cylinder ODE + valve model blocks)
 
 The digital twin workflow figure now becomes fully meaningful: the valve orifice model (Lesson 02) feeds flow $Q_{in}$ into the cylinder ODE block, which contains both the force balance (Lesson 03) and the pressure dynamics (this lesson). The four coupled equations live inside that "Cylinder ODE" block.
 
@@ -210,3 +212,40 @@ The machine can now **predict how fast pressure builds**. The pressure-dynamics 
 ---
 
 *Lesson 04 — Version 0.1 | Next: Lesson 05 — Simulation: the first ODE in Python (the cylinder comes alive)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 04 (Fluid Mechanics) of the Fluid-Powered Physical AI curriculum: "Pressure dynamics and bulk modulus". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Pressure dynamics and bulk modulus", Module 04 — Fluid Mechanics) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Pressure dynamics and bulk modulus") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Pressure dynamics and bulk modulus", Module 04 — Fluid Mechanics) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

@@ -76,7 +76,9 @@ $$\text{capstone passed} = \bigwedge_{j=1}^{7} (\text{metric}_j \text{ meets tar
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (the complete demonstrated machine)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (the complete demonstrated machine)
 
 Picture the demonstration as the complete architecture in action. For Task 1, a plot of commanded vs. measured position — the points clustering tight on the ideal diagonal, the twin's predictions overlaid and coincident, the errors well within the ±2 mm band. For Task 2, the machine's gripper executing approach → grip → lift → move → place, the object landing within the ±10 mm target circle, repeated successfully. Alongside both, the twin's live display: predicted and measured tracking together, residuals flat near zero, the fault detector armed. And a validation scorecard: seven specifications, seven checkmarks. The figure shows the machine doing what the whole curriculum built it to do — performing autonomously, watched by its twin, validated against every target. This is the Smart Agricultural Workcell, demonstrated.
 
@@ -123,6 +125,13 @@ And the discipline extends to honesty about shortfalls: a real demonstration tha
 
 ## 7. Interactive demonstration
 
+
+**▶ Interactive demo — Capstone Validation Dashboard**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module12/capstone_validator.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
+
 ```python
 def validate_capstone(metrics):
     """Check measured performance against the seven capstone specs."""
@@ -163,6 +172,13 @@ This is the complete demonstration — the machine proving itself as a Fluid-Pow
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module12/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Why is a machine that *can* perform not the same as one that *has* performed?
 2. What are the two demonstration tasks, and what does each prove?
@@ -221,3 +237,40 @@ The machine is now a **demonstrated, validated autonomous system**. You can run 
 ---
 
 *Lesson 03 — Version 0.1 | Next: Lesson 04 — Documenting and reflecting on the complete machine (closing the curriculum)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 12 (Capstone) of the Fluid-Powered Physical AI curriculum: "The machine demonstrates its autonomy". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine demonstrates its autonomy", Module 12 — Capstone) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine demonstrates its autonomy") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine demonstrates its autonomy", Module 12 — Capstone) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

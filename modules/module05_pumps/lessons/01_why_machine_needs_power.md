@@ -67,7 +67,9 @@ where $\eta_v$ is the **volumetric efficiency** (typically 0.90–0.95 for a gea
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 1 — Hydraulic power)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 1 — Hydraulic power)
 
 Trace the machine's power source. The electric motor's shaft spins the pump. The pump draws oil from the reservoir through its inlet (suction) line and forces it out under pressure toward the valves. A pressure relief valve sits at the outlet, ready to protect the machine if pressure climbs too high (Lesson 04).
 
@@ -197,4 +199,41 @@ The machine now has a **power source**. You can specify the pump that gives the 
 
 ---
 
-*Lesson 01 — Version 0.1 | Next: Lesson 02 — How the machine controls its flow (displacement, speed, and the pump's character)*
+*Lesson 01 — Version 0.1 | Next: Lesson 02 — Choosing the right power source for the workcell*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 05 (Pumps) of the Fluid-Powered Physical AI curriculum: "Why the machine needs hydraulic power". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Why the machine needs hydraulic power", Module 05 — Pumps) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Why the machine needs hydraulic power") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Why the machine needs hydraulic power", Module 05 — Pumps) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

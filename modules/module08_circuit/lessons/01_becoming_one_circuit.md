@@ -63,7 +63,9 @@ Integrating the subsystems means summing these drops to confirm the cylinder sti
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (the complete circuit)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (the complete circuit)
 
 Picture the four subsystems joined into one loop. Fluid leaves the reservoir, the pump lifts it to system pressure, it travels the pressure line to the DCV, the DCV routes it to the cylinder (extend or retract), the returning fluid passes through the filter, and it drops back into the reservoir to shed heat and de-aerate. The relief valve branches off the pressure line, ready to cap pressure or handle trapped idle flow. This single closed loop is the machine as one system — the ISO 1219 schematic that is this module's artifact. Every component from Modules 05–07 appears in its place, connected.
 
@@ -191,3 +193,40 @@ The machine now exists as **one complete hydraulic circuit**. You can trace the 
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — How the machine sequences its actions (multi-actuator circuits)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 08 (Circuit) of the Fluid-Powered Physical AI curriculum: "The machine becomes one circuit". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine becomes one circuit", Module 08 — Circuit) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine becomes one circuit") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine becomes one circuit", Module 08 — Circuit) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

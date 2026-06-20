@@ -68,7 +68,9 @@ $$\dot{Q}_{continuous} = P_{idle} \times \text{(fraction of time holding)}$$
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (the integrated twin)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (the integrated twin)
 
 The defining visual is the four-panel plot from the integrated simulation: **position, pressure, flow, and force**, each vs. time, across the full cycle. Position ramps up (extend), plateaus (hold), ramps down faster (retract), and flattens (stop). Pressure sits at the working level during motion and jumps to the relief setting (115 bar) during the hold. Flow to the cylinder is full during motion and zero during the hold. Force shows the extend push, the holding force, and the retract. Reading these four panels together, the machine's entire task is visible at a glance — the validation that all the subsystem models work as one. This plot *is* the integrated machine, on a screen.
 
@@ -113,6 +115,13 @@ The machine spends most of its energy on heat — dominated by the hold. At ~13 
 
 ## 7. Interactive demonstration
 
+
+**▶ Interactive demo — Task-Sequence Stepper**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module08/task_sequencer.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
+
 ```python
 # The machine's energy budget per cycle (conceptual)
 def cycle_energy(load_N=800, stroke_mm=150, hold_s=1.0,
@@ -149,6 +158,13 @@ This is the digital twin executing a complete task — the integrated machine, s
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module08/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Why must the machine's subsystem models be run *together*, not just individually?
 2. Name the five phases of the machine's full task cycle.
@@ -213,3 +229,40 @@ The deliverable of this module is the **Integrated Hydraulic Circuit** for the S
 ---
 
 *Lesson 04 — Version 0.1 | Module 08 lesson content complete. The physical machine is whole. Next: Module 08 summary, exercises, lab — then Modules 09–12 (sensing and intelligence).*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 08 (Circuit) of the Fluid-Powered Physical AI curriculum: "The machine, simulated end to end". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine, simulated end to end", Module 08 — Circuit) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine, simulated end to end") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine, simulated end to end", Module 08 — Circuit) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

@@ -67,7 +67,9 @@ confirming the twin keeps pace operationally.
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (all loops active, the complete pipeline)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (all loops active, the complete pipeline)
 
 Picture the complete pipeline running with every loop closed: SENSE (sensors streaming) → UNDERSTAND (twin interpreting) → DECIDE (state machine sequencing) → COMMAND (PID computing) → ACTUATE (valves and cylinder moving) → VALIDATE (twin checking residuals), cycling continuously. The figure shows the full loop active — information flowing all the way around, the machine sensing, deciding, acting, and validating itself in one continuous cycle. Overlaid: the real step response meeting the spec band (<5% overshoot, settling within 2 mm), and the live twin's prediction tracking the measured position in real time. This is the complete machine with every loop closed — the integrated autonomous system, running.
 
@@ -205,3 +207,40 @@ The machine is now an **integrated autonomous system** — every loop closed on 
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — Demonstrating the machine's autonomous tasks*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 12 (Capstone) of the Fluid-Powered Physical AI curriculum: "The machine closes every loop". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine closes every loop", Module 12 — Capstone) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine closes every loop") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine closes every loop", Module 12 — Capstone) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

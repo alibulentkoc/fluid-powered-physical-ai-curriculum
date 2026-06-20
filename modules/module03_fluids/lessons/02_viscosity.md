@@ -78,7 +78,9 @@ where $\nu$ is kinematic viscosity (cSt), $T$ is absolute temperature (K), and $
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 2)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 2)
 
 A viscosity-temperature plot is the central visual for this lesson. Picture the curve: high viscosity at low temperature, falling steeply, then leveling as temperature rises. Overlay two horizontal lines marking the pump's acceptable viscosity band (say, minimum 13 cSt for lubrication, maximum 80 cSt for pumpability). The temperature range where the curve sits between those lines is the fluid's usable operating window.
 
@@ -114,6 +116,13 @@ So between roughly 27°C and 72°C, the VG 46 oil stays within the pump's 13–8
 ---
 
 ## 7. Interactive demonstration
+
+
+**▶ Interactive demo — Viscosity & Cleanliness Explorer**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module03/viscosity_explorer.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
 
 ```python
 import math
@@ -156,6 +165,13 @@ Use NumPy and Matplotlib.
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module03/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. What is viscosity, in plain terms?
 2. Which way does viscosity change as temperature rises?
@@ -216,3 +232,40 @@ The machine's **fluid grade can now be selected**. You can model viscosity acros
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — Contamination, filtration, and ISO cleanliness*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 03 (Fluids) of the Fluid-Powered Physical AI curriculum: "Viscosity and the viscosity-temperature relationship". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Viscosity and the viscosity-temperature relationship", Module 03 — Fluids) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Viscosity and the viscosity-temperature relationship") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Viscosity and the viscosity-temperature relationship", Module 03 — Fluids) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

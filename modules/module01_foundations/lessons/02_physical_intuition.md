@@ -91,7 +91,9 @@ Pressure times flow rate equals hydraulic power. This is the hydraulic equivalen
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg`
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.*
 
 The pipeline diagram shows where each physical quantity lives in the workcell system:
 
@@ -263,3 +265,40 @@ The machine's behavior can now be **reasoned about intuitively**. You can predic
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — Mathematical foundations*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 01 (Foundations) of the Fluid-Powered Physical AI curriculum: "Physical intuition". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Physical intuition", Module 01 — Foundations) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Physical intuition") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Physical intuition", Module 01 — Foundations) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

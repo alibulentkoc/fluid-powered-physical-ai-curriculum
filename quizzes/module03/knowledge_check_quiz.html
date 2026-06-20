@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge Check — Module 03</title><style>
+:root{--fp-blue:#185FA5;--fp-blue-dark:#0d3d6e;--fp-green:#2e9e5b;--fp-red:#d4504e;--fp-accent:#2196F3;--fp-bg:#fff;--fp-panel:#f6f8fa;--fp-border:#d9e1e8;--fp-text:#1a2733;--fp-muted:#5a6b7b}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--fp-text);background:var(--fp-bg);margin:0;padding:24px;line-height:1.55}
+.fp-wrap{max-width:760px;margin:0 auto}
+.fp-header{border-bottom:3px solid var(--fp-blue);padding-bottom:12px;margin-bottom:8px}
+.fp-header h1{font-size:1.4rem;margin:0 0 4px;color:var(--fp-blue-dark)}
+.fp-header .fp-sub{color:var(--fp-muted);font-size:.92rem}
+.fp-intro{font-size:.9rem;color:var(--fp-muted);margin:14px 0 22px}
+.fp-q{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--fp-border)}
+.fp-qtext{font-weight:600;margin-bottom:12px}.fp-qtext .n{color:var(--fp-blue);margin-right:6px}
+.fp-opt{display:block;padding:11px 14px;margin-bottom:8px;border:1.5px solid var(--fp-border);border-radius:8px;cursor:pointer;transition:all .12s;background:#fff}
+.fp-opt:hover{border-color:var(--fp-accent);background:#f0f7ff}
+.fp-opt.correct{border-color:var(--fp-green);background:#eafbf0;cursor:default}
+.fp-opt.wrong{border-color:var(--fp-red);background:#fdeceb;cursor:default}
+.fp-opt.locked{cursor:default;opacity:.75}
+.fp-fb{font-size:.88rem;margin-top:8px;padding:9px 12px;border-radius:6px;display:none}
+.fp-fb.show{display:block}.fp-fb.ok{background:#eafbf0;color:#1d6b3c}.fp-fb.no{background:#fdeceb;color:#9c2b29}
+.fp-score{font-size:1.1rem;font-weight:700;text-align:center;padding:16px;background:var(--fp-panel);border-radius:8px;margin-top:10px}
+.fp-reset{display:block;margin:14px auto 0;background:#fff;color:var(--fp-blue);border:1.5px solid var(--fp-blue);border-radius:7px;padding:9px 18px;font-weight:600;cursor:pointer}
+code{background:#eef2f5;padding:1px 5px;border-radius:4px;font-size:.88em}
+</style></head>
+<body><div class="fp-wrap">
+<div class="fp-header"><h1>Knowledge Check — Module 03</h1><div class="fp-sub">Hydraulic Fluids and Energy Transmission</div></div>
+<p class="fp-intro">Formative — unlimited attempts, immediate feedback; does not affect your grade. Click an answer to check it.</p>
+<div id="quiz"></div>
+<div class="fp-score" id="score">Answer the questions to see your score.</div>
+<button class="fp-reset" onclick="location.reload()">Reset quiz</button>
+</div><script>const QUESTIONS=[{"q": "As oil temperature rises, its viscosity:", "opts": ["rises", "falls", "stays constant", "oscillates"], "correct": 1, "fb": "Viscosity falls (roughly exponentially) as temperature rises."}, {"q": "The ISO 4406 code describes:", "opts": ["oil viscosity", "fluid cleanliness (particle counts)", "pressure rating", "flow rate"], "correct": 1, "fb": "ISO 4406 codes count particles per mL in three size bands — cleanliness."}, {"q": "Higher contamination generally causes:", "opts": ["lower wear", "faster wear and shorter life", "no effect", "more viscosity"], "correct": 1, "fb": "More particles accelerate abrasive wear, shortening component life."}, {"q": "The hydraulic fluid's main job is to:", "opts": ["lubricate only", "transmit power (and lubricate, seal, cool)", "cool only", "add weight"], "correct": 1, "fb": "Its primary role is transmitting power; it also lubricates, seals, and cools."}, {"q": "Energy losses in fluid transmission appear mainly as:", "opts": ["light", "heat (from friction and throttling)", "sound only", "mass"], "correct": 1, "fb": "Pressure drops and throttling dissipate energy as heat."}];
+const quizEl=document.getElementById('quiz'),scoreEl=document.getElementById('score');
+let answered=0,correct=0;const done=new Set();
+QUESTIONS.forEach((item,qi)=>{const qDiv=document.createElement('div');qDiv.className='fp-q';
+qDiv.innerHTML='<div class="fp-qtext"><span class="n">Q'+(qi+1)+'.</span>'+item.q+'</div>';
+item.opts.forEach((opt,oi)=>{const o=document.createElement('div');o.className='fp-opt';o.textContent=opt;o.onclick=()=>choose(qDiv,item,qi,oi);qDiv.appendChild(o);});
+const fb=document.createElement('div');fb.className='fp-fb';qDiv.appendChild(fb);quizEl.appendChild(qDiv);});
+function choose(qDiv,item,qi,oi){if(done.has(qi))return;done.add(qi);
+const opts=qDiv.querySelectorAll('.fp-opt');opts.forEach((o,i)=>{o.classList.add('locked');if(i===item.correct)o.classList.add('correct');if(i===oi&&oi!==item.correct)o.classList.add('wrong');});
+const fb=qDiv.querySelector('.fp-fb');const right=oi===item.correct;fb.classList.add('show',right?'ok':'no');
+fb.innerHTML=(right?'\u2713 Correct. ':'\u2717 Not quite. ')+item.fb;answered++;if(right)correct++;
+scoreEl.textContent='Score: '+correct+' / '+answered+' answered'+(answered===QUESTIONS.length?' \u2014 '+(correct>=Math.ceil(QUESTIONS.length*0.7)?'great work!':'review the lesson and try again.'):'');}
+</script></body></html>

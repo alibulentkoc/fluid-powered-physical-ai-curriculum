@@ -67,7 +67,9 @@ For the workcell at 10.67 LPM through a properly sized DCV (12 mm² ports), each
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (the COMMAND → ACTUATE transition)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (the COMMAND → ACTUATE transition)
 
 Picture the DCV as the machine's switch-yard. The three spool positions are three track layouts. Slide left and the tracks route pressure to the bore and drain the rod — the cylinder extends. Center, and all tracks are blocked — the cylinder is locked. Slide right, and the tracks reverse — the cylinder retracts.
 
@@ -209,3 +211,40 @@ The machine now has **directional control of its motion**. You can command the w
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — How the machine protects itself and holds loads (pressure control)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 06 (Valves) of the Fluid-Powered Physical AI curriculum: "The machine needs to direct its flow". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine needs to direct its flow", Module 06 — Valves) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine needs to direct its flow") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine needs to direct its flow", Module 06 — Valves) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

@@ -66,7 +66,9 @@ A small RMS residual (relative to the 200 mm step) confirms the twin predicts th
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (closed-loop validation)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (closed-loop validation)
 
 Picture two step-response curves overlaid: the twin's *predicted* closed-loop response and the real machine's *actual* logged response, both rising toward 200 mm. When the twin is accurate, the curves nearly coincide — the residual between them is small, confirming the prediction. The figure shows the predicted curve hitting the spec (under 5% overshoot, settling within 2 mm) and the actual curve tracking it closely. This overlay is the machine's proof that its control works and its twin is trustworthy — the validation that lets the machine design control in simulation. A third panel shows the valve command over the step: saturated during the fast approach (anti-windup active), easing as the target nears.
 
@@ -226,3 +228,40 @@ The deliverable of this module is the **Embedded Control System** for the Smart 
 ---
 
 *Lesson 04 — Version 0.1 | Module 10 lesson content complete. The machine decides and acts. Next: Module 10 summary, exercises, lab — then Module 11 (the integrated digital twin).*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 10 (Control) of the Fluid-Powered Physical AI curriculum: "The machine validates its control before acting". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine validates its control before acting", Module 10 — Control) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine validates its control before acting") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine validates its control before acting", Module 10 — Control) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

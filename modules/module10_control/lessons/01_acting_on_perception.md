@@ -61,7 +61,9 @@ so velocity depends on $\sqrt{\Delta P}$, which varies with load. A gain $K_p$ t
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/system_pipeline.svg` (the full SENSE → DECIDE → COMMAND loop)
+![System Pipeline](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/system_pipeline.svg)
+
+*Figure: system pipeline — see full diagram above.* (the full SENSE → DECIDE → COMMAND loop)
 
 Picture the control loop as a cycle: the target enters, the measured position is subtracted to form the error, the controller turns the error into a valve command, the valve moves the cylinder, the sensor reads the new position, and that feeds back to the subtraction — round and round, many times a second. This block diagram is the machine's brain in its simplest form. Overlay two step-response traces: open-loop (the cylinder lands at a scattered, inconsistent position) versus closed-loop (the cylinder converges smoothly to the target every time). The figure shows the loop transforming inconsistent open-loop motion into precise, repeatable positioning — perception steering action.
 
@@ -189,3 +191,40 @@ The machine now has **feedback control** — perception steering action. You can
 ---
 
 *Lesson 01 — Version 0.1 | Next: Lesson 02 — Giving the machine a precise controller (PID and tuning)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 10 (Control) of the Fluid-Powered Physical AI curriculum: "The machine acts on what it perceives". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The machine acts on what it perceives", Module 10 — Control) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The machine acts on what it perceives") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The machine acts on what it perceives", Module 10 — Control) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

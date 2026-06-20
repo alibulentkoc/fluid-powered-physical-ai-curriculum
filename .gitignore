@@ -14,3 +14,7 @@ __pycache__/
 
 # Generated plot output from code/ (regenerated with --plot)
 *.png
+/docs/demos/
+/docs/quizzes/
+/.build_tools/
+modules_backup_*/

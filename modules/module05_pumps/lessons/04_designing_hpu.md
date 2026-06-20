@@ -63,7 +63,9 @@ A 40 L reservoir with normal surface area can shed this for intermittent bench d
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 1, fully assembled)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 1, fully assembled)
 
 Picture the machine's HPU as a single mounted assembly. At the base, the reservoir — a tank of oil. On top, the motor and pump joined by a bell housing, the pump's suction line reaching down into the tank, its pressure line rising to feed the machine. The relief valve sits at the pressure outlet, its return line dropping back to the tank. The filter sits in the return path; the breather caps the tank. This is the machine's power source as a physical object — the thing a student could mount on a bench and wire up. Every arrow of fluid traces from tank, through pump, out to the machine, and back.
 
@@ -105,6 +107,13 @@ This table *is* the Hydraulic Power Unit Design — the machine's power subsyste
 
 ## 7. Interactive demonstration
 
+
+**▶ Interactive demo — HPU Power-Budget Sizer**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module05/hpu_power_budget.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
+
 ```python
 def design_hpu(flow_lpm, operating_bar, eta_o=0.83, k_reservoir=4):
     """Produce the machine's HPU design from its requirements."""
@@ -144,6 +153,13 @@ This is the complete pump model the digital twin uses, and the tool that produce
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module05/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. Name the components of the machine's HPU and the job of each.
 2. Why does the reservoir need to be several times the pump's per-minute flow?
@@ -208,3 +224,40 @@ The deliverable of this module is the **Hydraulic Power Unit Design** for the Sm
 ---
 
 *Lesson 04 — Version 0.1 | Module 05 lesson content complete. Next: Module 05 summary, exercises, code, and Lab 05.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 05 (Pumps) of the Fluid-Powered Physical AI curriculum: "Designing the machine's power unit". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Designing the machine's power unit", Module 05 — Pumps) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Designing the machine's power unit") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Designing the machine's power unit", Module 05 — Pumps) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

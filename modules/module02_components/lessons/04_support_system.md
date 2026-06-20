@@ -73,7 +73,9 @@ Fluid flowing through a hose loses pressure to friction. The Darcy-Weisbach rela
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/capstone_architecture.svg` (Subsystem 2 — Fluid transport)
+![Capstone Architecture](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/capstone_architecture.svg)
+
+*Figure: capstone architecture — see full diagram above.* (Subsystem 2 — Fluid transport)
 
 The fluid transport subsystem connects everything:
 
@@ -227,3 +229,40 @@ The machine can now **stay healthy over time**. You can specify the reservoir, f
 ---
 
 *Lesson 04 — Version 0.1 | Module 02 lesson content complete. Next: Module 02 summary, exercises, and the pump flow code.*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 02 (Components) of the Fluid-Powered Physical AI curriculum: "The support system: reservoir, filter, hoses, fittings". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The support system: reservoir, filter, hoses, fittings", Module 02 — Components) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The support system: reservoir, filter, hoses, fittings") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The support system: reservoir, filter, hoses, fittings", Module 02 — Components) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

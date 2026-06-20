@@ -41,4 +41,21 @@ if [ -d assets ]; then
   cp -r assets/* docs/assets/ 2>/dev/null || true
 fi
 
+# Copy the standalone interactive demos and quizzes into the site so the
+# lesson links resolve (they open in a new tab, like the sister site).
+rm -rf docs/demos docs/quizzes
+if [ -d demos ]; then
+  mkdir -p docs/demos
+  # only the per-module html widgets (skip PLAN.md / _shared.css)
+  for d in demos/module*/; do
+    cp -r "$d" "docs/demos/" 2>/dev/null || true
+  done
+fi
+if [ -d quizzes ]; then
+  mkdir -p docs/quizzes
+  for d in quizzes/module*/; do
+    cp -r "$d" "docs/quizzes/" 2>/dev/null || true
+  done
+fi
+
 echo "docs/ assembled from authoring sources."

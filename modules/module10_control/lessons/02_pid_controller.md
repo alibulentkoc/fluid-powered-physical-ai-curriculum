@@ -80,7 +80,9 @@ These give a starting point; the machine then refines by observing the step resp
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (the control loop with PID)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (the control loop with PID)
 
 Picture four step-response curves for the machine commanded to 200 mm, each a different tuning:
 - **P only:** rises, settles *below* target (steady-state error), flat thereafter.
@@ -121,6 +123,13 @@ Final tuning: $K_p = 0.02$, $K_i = 0.002$, $K_d = 0.04$, with anti-windup and de
 ---
 
 ## 7. Interactive demonstration
+
+
+**▶ Interactive demo — PID Tuner**
+
+[Open this demo in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/demos/module10/pid_tuner.html)
+
+This self-contained widget lets you explore the concepts of this module hands-on — adjust the inputs and watch the machine's numbers respond live, built from the same equations the tested code uses.
 
 ```python
 class PID:
@@ -177,6 +186,13 @@ This is the machine's precise controller — the core of its closed-loop positio
 ---
 
 ## 9. Knowledge check
+
+
+*Formative — unlimited attempts, immediate feedback; does not affect your grade.*
+
+[Open the interactive quiz in a new tab ↗](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/quizzes/module10/knowledge_check_quiz.html)
+
+Or work through the written questions below.
 
 1. What does each PID term respond to (present, past, rate of change)?
 2. Which term eliminates steady-state error, and how?
@@ -235,3 +251,40 @@ The machine now has **precise closed-loop control**. You can give the machine a 
 ---
 
 *Lesson 02 — Version 0.1 | Next: Lesson 03 — Giving the machine task logic and safety (the state machine)*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 10 (Control) of the Fluid-Powered Physical AI curriculum: "Giving the machine a precise controller". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("Giving the machine a precise controller", Module 10 — Control) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("Giving the machine a precise controller") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("Giving the machine a precise controller", Module 10 — Control) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```

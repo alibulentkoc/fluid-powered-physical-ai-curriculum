@@ -65,7 +65,9 @@ over a moving window $W$ — recent enough to be current, long enough to show tr
 
 ## 4. Visual explanation
 
-> See figure: `assets/figures/digital_twin_workflow.svg` (the operator dashboard)
+![Digital Twin Workflow](https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/assets/figures/digital_twin_workflow.svg)
+
+*Figure: digital twin workflow — see full diagram above.* (the operator dashboard)
 
 Picture the dashboard as the operator sees it: a top panel with position — the commanded target, the measured position, and the twin's prediction, ideally overlapping. A pressure panel with the bore and rod pressures against shaded normal bands. A residual panel where the gaps hover near zero within threshold lines. And a status strip with fault flags — green for healthy, lit and labeled when a fault is detected ("SEAL LEAK — pressure residual"). The figure shows this assembled display: the twin's entire vigilance made glanceable, so a human can absorb the machine's health in a second. Beside it, a "before/after fitting" inset shows the residual shrinking once parameters are estimated — the twin sharpening itself. This dashboard is the human face of the Integrated Digital Twin.
 
@@ -210,3 +212,40 @@ The deliverable of this module is the **Integrated Digital Twin** for the Smart 
 ---
 
 *Lesson 04 — Version 0.1 | Module 11 lesson content complete. The twin is whole and vigilant. Next: Module 11 summary, exercises, lab — then Module 12 (the complete autonomous demonstration).*
+
+
+---
+
+## AI Learning Companion
+
+Copy any prompt below into Claude, ChatGPT, or another AI assistant.
+
+**Tutor prompt** — explain it another way
+
+```
+Re-explain this lesson from Module 11 (Digital Twin) of the Fluid-Powered Physical AI curriculum: "The twin improves itself and shows the operator". Teach it through the running machine — the Smart Agricultural Workcell — using physical intuition first, then the math. Keep hydraulic terminology precise.
+```
+
+**Practice prompt** — generate more exercises
+
+```
+Give me 5 practice problems for this lesson ("The twin improves itself and shows the operator", Module 11 — Digital Twin) on the Smart Agricultural Workcell, with full worked solutions. Mix conceptual and numerical.
+```
+
+**Explore prompt** — connect it to the real world
+
+```
+Show me how this lesson's concept ("The twin improves itself and shows the operator") appears in real agricultural, construction, or industrial hydraulic machines, with concrete examples and typical numbers.
+```
+
+## Global Learning Support
+
+Need this lesson in another language? Copy a prompt below into an AI assistant. English remains the authoritative source.
+
+**Supported languages (initial):** English · Español · 中文 (Simplified Chinese) · Türkçe
+
+```
+I just studied this lesson ("The twin improves itself and shows the operator", Module 11 — Digital Twin) from the Fluid-Powered Physical AI curriculum.
+Explain it in [Spanish / Simplified Chinese / Turkish]. Keep hydraulic and mathematical terminology in English where commonly used.
+Then provide: a short summary, three practice questions, and one challenge problem.
+```
