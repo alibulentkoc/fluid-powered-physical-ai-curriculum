@@ -1,0 +1,152 @@
+site_name: Fluid-Powered Physical AI Curriculum
+site_description: >-
+  An open curriculum in fluid power, hydraulics, electro-hydraulic systems,
+  sensors, embedded intelligence, agricultural robotics, and digital twins —
+  built around one running machine, the Smart Agricultural Workcell.
+site_url: https://alibulentkoc.github.io/fluid-powered-physical-ai-curriculum/
+repo_url: https://github.com/alibulentkoc/fluid-powered-physical-ai-curriculum
+repo_name: alibulentkoc/fluid-powered-physical-ai-curriculum
+edit_uri: edit/main/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alibulentkoc/fluid-powered-physical-ai-curriculum
+
+nav:
+  - Home: index.md
+  - "About the machine":
+      - "The machine's story": MACHINE_STORY.md
+      - "Benchmark tasks": BENCHMARK_TASKS.md
+      - "Module → artifact map": MODULE_ARTIFACT_MAP.md
+      - "Curriculum narrative": curriculum_pages/CURRICULUM_NARRATIVE.md
+  - "Module 01 — Foundations":
+      - "Why this matters": modules/module01_foundations/lessons/01_why_this_matters.md
+      - "Physical intuition": modules/module01_foundations/lessons/02_physical_intuition.md
+      - "Mathematical foundations": modules/module01_foundations/lessons/03_mathematical_foundations.md
+      - "Visual explanation": modules/module01_foundations/lessons/04_visual_explanation.md
+      - "Summary": modules/module01_foundations/summary.md
+  - "Module 02 — Components":
+      - "Pumps: the heart of the system": modules/module02_components/lessons/01_pumps.md
+      - "Valves: direction, pressure, flow": modules/module02_components/lessons/02_valves.md
+      - "Cylinders and motors": modules/module02_components/lessons/03_cylinders_and_motors.md
+      - "The support system": modules/module02_components/lessons/04_support_system.md
+      - "Summary": modules/module02_components/summary.md
+  - "Module 03 — Fluids":
+      - "What hydraulic fluid does": modules/module03_fluids/lessons/01_what_fluid_does.md
+      - "Viscosity": modules/module03_fluids/lessons/02_viscosity.md
+      - "Contamination and cleanliness": modules/module03_fluids/lessons/03_contamination.md
+      - "Energy losses": modules/module03_fluids/lessons/04_energy_losses.md
+      - "Summary": modules/module03_fluids/summary.md
+  - "Module 04 — Fluid Mechanics":
+      - "Bernoulli and the energy equation": modules/module04_fluid_mechanics/lessons/01_bernoulli.md
+      - "Orifice flow and the valve model": modules/module04_fluid_mechanics/lessons/02_orifice_valve_model.md
+      - "Cylinder dynamics: force balance": modules/module04_fluid_mechanics/lessons/03_cylinder_force_balance.md
+      - "Pressure dynamics and bulk modulus": modules/module04_fluid_mechanics/lessons/04_pressure_dynamics.md
+      - "Simulation: the first ODE": modules/module04_fluid_mechanics/lessons/05_simulation.md
+      - "Summary": modules/module04_fluid_mechanics/summary.md
+  - "Module 05 — Pumps":
+      - "Why the machine needs power": modules/module05_pumps/lessons/01_why_machine_needs_power.md
+      - "Choosing the power source": modules/module05_pumps/lessons/02_which_pump.md
+      - "Performance and efficiency": modules/module05_pumps/lessons/03_performance_efficiency.md
+      - "Designing the power unit": modules/module05_pumps/lessons/04_designing_hpu.md
+      - "Summary": modules/module05_pumps/summary.md
+  - "Module 06 — Valves":
+      - "Directing flow": modules/module06_valves/lessons/01_directing_flow.md
+      - "Pressure control": modules/module06_valves/lessons/02_pressure_control.md
+      - "Flow control": modules/module06_valves/lessons/03_flow_control.md
+      - "Commanding the valves": modules/module06_valves/lessons/04_commanding_valves.md
+      - "Summary": modules/module06_valves/summary.md
+  - "Module 07 — Actuators":
+      - "Producing force": modules/module07_actuators/lessons/01_producing_force.md
+      - "Specifying the actuator": modules/module07_actuators/lessons/02_specifying_actuator.md
+      - "Real actuator behavior": modules/module07_actuators/lessons/03_real_behavior.md
+      - "Choosing the actuator type": modules/module07_actuators/lessons/04_actuator_selection.md
+      - "Summary": modules/module07_actuators/summary.md
+  - "Module 08 — Circuit":
+      - "Becoming one circuit": modules/module08_circuit/lessons/01_becoming_one_circuit.md
+      - "Sequencing actions": modules/module08_circuit/lessons/02_sequencing_actions.md
+      - "Failing safely": modules/module08_circuit/lessons/03_failing_safely.md
+      - "Simulated end to end": modules/module08_circuit/lessons/04_energy_and_simulation.md
+      - "Summary": modules/module08_circuit/summary.md
+  - "Module 09 — Sensors":
+      - "Perceiving its state": modules/module09_sensors/lessons/01_machine_perceives.md
+      - "Cleaning the senses": modules/module09_sensors/lessons/02_cleaning_signals.md
+      - "Detecting the invisible": modules/module09_sensors/lessons/03_detecting_invisible.md
+      - "Logging and the twin": modules/module09_sensors/lessons/04_logging_and_twin.md
+      - "Summary": modules/module09_sensors/summary.md
+  - "Module 10 — Control":
+      - "Acting on perception": modules/module10_control/lessons/01_acting_on_perception.md
+      - "A precise controller (PID)": modules/module10_control/lessons/02_pid_controller.md
+      - "Task logic and safety": modules/module10_control/lessons/03_state_machine_safety.md
+      - "Validating control first": modules/module10_control/lessons/04_closing_loop_simulation.md
+      - "Summary": modules/module10_control/summary.md
+  - "Module 11 — Digital Twin":
+      - "The twin becomes whole": modules/module11_twin/lessons/01_twin_becomes_whole.md
+      - "Running alongside the machine": modules/module11_twin/lessons/02_running_alongside.md
+      - "Watching over the machine": modules/module11_twin/lessons/03_watching_over.md
+      - "Self-improving and observable": modules/module11_twin/lessons/04_self_improving_dashboard.md
+      - "Summary": modules/module11_twin/summary.md
+  - "Module 12 — Capstone":
+      - "Commissioning": modules/module12_capstone/lessons/01_commissioning.md
+      - "Integration": modules/module12_capstone/lessons/02_integration.md
+      - "Demonstration": modules/module12_capstone/lessons/03_demonstration.md
+      - "Documentation and reflection": modules/module12_capstone/lessons/04_documentation_reflection.md
+      - "Summary": modules/module12_capstone/summary.md
+

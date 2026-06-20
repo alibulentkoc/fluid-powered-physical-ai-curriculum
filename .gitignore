@@ -1,28 +1,15 @@
-# Python
+# MkDocs build output
+/site/
+
+# Generated docs/ content (assembled by build_site.sh from authoring sources)
+/docs/modules/
+/docs/curriculum_pages/
+/docs/assets/
+
+# Python cruft
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Generated artifacts (e.g. matplotlib plot output)
-*.png
-
-# OS / editor
+*.pyc
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
+
+# Generated plot output from code/ (regenerated with --plot)
+*.png
