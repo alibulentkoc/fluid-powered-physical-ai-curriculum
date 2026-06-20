@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 4 (Actuation)  
 **Pipeline Stages:** ACTUATE
 
+> **Machine mission:** Producing the Machine's Force and Motion
+>
+> **Machine Capability Added:** Produce sized, controllable force from a real, specified actuator.
+>
+> **Benchmark task advanced:** Force-Controlled Interaction
+>
+> **Artifact:** Actuator Selection Report
+
 ---
 
 ## Module Purpose

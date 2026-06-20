@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 6 (Digital Twin)  
 **Pipeline Stages:** VALIDATE
 
+> **Machine mission:** The Integrated Digital Twin
+>
+> **Machine Capability Added:** Run one live twin that mirrors, monitors, and refines itself.
+>
+> **Benchmark task advanced:** Autonomous Manipulation (self-monitoring)
+>
+> **Artifact:** Integrated Digital Twin
+
 ---
 
 ## Module Purpose

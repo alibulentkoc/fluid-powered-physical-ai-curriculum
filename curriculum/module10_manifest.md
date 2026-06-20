@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 3 (Motion Control), 5 (Sensing and Intelligence)  
 **Pipeline Stages:** UNDERSTAND, DECIDE, COMMAND
 
+> **Machine mission:** Embedded Control — The Machine Decides and Acts
+>
+> **Machine Capability Added:** Close the loop, position precisely, run its task autonomously and safely.
+>
+> **Benchmark task advanced:** Precision Positioning (complete, closed-loop) + Autonomous Manipulation
+>
+> **Artifact:** Embedded Control System
+
 ---
 
 ## Module Purpose

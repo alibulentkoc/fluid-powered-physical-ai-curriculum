@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 1, 2, 3, 4 (full hydraulic system integration)  
 **Pipeline Stages:** ACTUATE, VALIDATE
 
+> **Machine mission:** Integrating the Machine's Hydraulic Circuit
+>
+> **Machine Capability Added:** Operate as one complete, integrated, fail-safe system.
+>
+> **Benchmark task advanced:** Precision Positioning (complete as a physical capability)
+>
+> **Artifact:** Integrated Hydraulic Circuit
+
 ---
 
 ## Module Purpose

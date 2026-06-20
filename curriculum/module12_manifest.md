@@ -6,6 +6,14 @@
 **Capstone Subsystems:** All six  
 **Pipeline Stages:** All six (SENSE → UNDERSTAND → DECIDE → COMMAND → ACTUATE → VALIDATE)
 
+> **Machine mission:** The Complete Autonomous Workcell (Capstone)
+>
+> **Machine Capability Added:** Operate as one demonstrated, validated, documented intelligent system.
+>
+> **Benchmark tasks:** All three demonstrated and validated
+>
+> **Artifact:** Demonstration System (curriculum completion)
+
 ---
 
 ## Module Purpose

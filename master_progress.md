@@ -1,3 +1,5 @@
+# Master Progress — ✅ CURRICULUM COMPLETE (12/12 modules)
+
 # Master Progress Tracker
 
 Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
@@ -94,13 +96,13 @@ Legend: ✅ Complete | 🟡 In Progress | 🔲 Not Started
 | 03 | ✅ COMPLETE (lessons, summary, code×4, exercises, lab) |
 | 04 | ✅ COMPLETE (5 lessons, summary, code×3, exercises, lab, twin born) |
 | 05 | ✅ COMPLETE (4 lessons, summary, pump model, exercises, lab, HPU artifact) |
-| 06 | 🔲 |
-| 07 | 🔲 |
-| 08 | 🔲 |
-| 09 | 🔲 |
-| 10 | 🔲 |
-| 11 | 🔲 |
-| 12 | 🔲 |
+| 06 | ✅ COMPLETE (4 lessons, summary, 4 code files, exercises, lab, Motion Control Architecture artifact) |
+| 07 | ✅ COMPLETE (4 lessons, summary, 4 code files, exercises, lab, Actuator Selection Report) |
+| 08 | ✅ COMPLETE (4 lessons, summary, 4 code files incl. integrated sim, exercises, lab, Integrated Hydraulic Circuit) |
+| 09 | ✅ COMPLETE (4 lessons, summary, 4 code files, exercises, lab, Sensor Layer artifact) |
+| 10 | ✅ COMPLETE (4 lessons, summary, 4 code files, exercises, lab, Embedded Control System artifact) |
+| 11 | ✅ COMPLETE (4 lessons, summary, 5 code files, exercises, lab, Integrated Digital Twin artifact) |
+| 12 | ✅ COMPLETE (4 lessons, summary, 3 code files, exercises, lab, Demonstration System artifact) — CURRICULUM COMPLETE |
 
 ---
 

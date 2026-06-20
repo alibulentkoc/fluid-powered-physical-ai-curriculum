@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: Module 05 COMPLETE (Directive 007) — first module built natively to Physical AI pattern
+Last updated: MODULE 12 COMPLETE — THE CURRICULUM IS COMPLETE. All 12 modules done. The Smart Agricultural Workcell is demonstrated, validated against all 7 specs, and documented.
 
 ---
 
@@ -155,5 +155,10 @@ Module 05 is now cleared to begin.
 
 ## Next action
 
-Module 06 — Controlling the Machine's Motion (valves). Machine-problem-first per the
-style guide. Artifact: Motion Control Architecture. Benchmark: Precision Positioning + Force.
+NONE — THE CURRICULUM IS COMPLETE. All 12 modules built natively to the Physical AI
+standard: 49 lessons, 39 tested Python files, 12 labs, full exercises, all six subsystems,
+the integrated digital twin, and the validated capstone demonstration (ALL SEVEN SPECS MET).
+
+Possible future work (optional): final top-level README polish, a curriculum-wide index,
+or the extension directions identified in Module 12 (camera guidance, learned control,
+multi-actuator coordination, field deployment).

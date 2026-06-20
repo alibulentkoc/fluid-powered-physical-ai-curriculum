@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 5 (Sensing and Intelligence)  
 **Pipeline Stages:** SENSE, UNDERSTAND (signal conditioning)
 
+> **Machine mission:** Sensing — The Machine Perceives
+>
+> **Machine Capability Added:** Perceive its state, diagnose hidden faults, connect to the twin.
+>
+> **Benchmark task advanced:** Autonomous Manipulation (begins)
+>
+> **Artifact:** Sensor Layer
+
 ---
 
 ## Module Purpose

@@ -6,6 +6,14 @@
 **Capstone Subsystems:** 3 (Motion Control)  
 **Pipeline Stages:** COMMAND (valve receives signal), ACTUATE (valve controls flow)
 
+> **Machine mission:** Controlling the Machine's Motion
+>
+> **Machine Capability Added:** Direct, protect, throttle, and command its motion.
+>
+> **Benchmark task advanced:** Precision Positioning (+ begins Force-Controlled Interaction)
+>
+> **Artifact:** Motion Control Architecture
+
 ---
 
 ## Module Purpose
